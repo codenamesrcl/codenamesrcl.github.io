@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hyper Content Drifter: Web View</title>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>        
+    
+		<h3>Hyper Content Drifter</h3>
+		
+		<label><strong>Drifters</strong></label>
+		<section>
+			
+		</section>
+		<section>
+			<h3>Results</h3>
+			<table for="results"></table>
+		</section>
+    
+    
+		<script>
+			var drifters = {};
+			$(document).ready(function(){
+				//request the list of web-enabled drifters available
+				//render the list of drifters and await a drift call
+				drifters = {};
+				
+				
+			});
+			
+			function renderDrifters(){
+				Object(keys).forEach(function(key){
+					
+				});
+			}
+			
+			function drift(target){
+				//target - name of the drifter being called
+				//trace back to the source of the drift call
+				//grab the parameter list from the input set within
+				
+				$.post()
+					.then(
+						function(data){
+							renderResults(data, drifters[target].columns);
+						},
+						function(err){
+							console.error(err)
+							//report the error in the results area
+						});
+						
+			}
+			
+			function renderResults(results, colorder){
+				//results - array of results from the drifter
+				//colorder - array of strings detailing the order of the columns
+				//render the json results as a table
+				//in the order initially given
+				//might have filter/sort options in the future
+				
+				if(typeof(results) === 'array'){
+					renderHeader(colorder);
+					results.forEach(function(item){
+						renderRow(item, colorder);
+					});
+				}
+				
+			}
+			
+			function renderHeader(colorder){
+				var markup = '<thead><tr>'
+				colorder.forEach(function(x){
+					markup += `<th>${x}</th>`;
+				});
+				
+				return markup + '</tr></thead>';
+			}
+			
+			function renderRow(row, colorder){
+				//render an individual row
+				var markup = '';
+				
+				colorder.forEach(function(x){
+					markup += `<td>${row[x]}</td>`;
+				});
+			}
+			
+		</script>
+    
+    </body>
+</html>
