@@ -1,55 +1,55 @@
 [data-for="board"]{
-	background: #555;
+   background: #555;
 }
 
 .match-base{
-	margin: 0.5rem;
+   margin: 0.5rem;
 }
 
 .match{
-	border-right: 2px solid #bbb;
-	border-radius: 6px;
+   border-right: 2px solid #bbb;
+   border-radius: 6px;
 
-	padding: 0.25rem;
-	margin: 0.5rem;
+   padding: 0.25rem;
+   margin: 0.5rem;
 
-	display:flex;
-	align-items: center;
+   display:flex;
+   align-items: center;
 
-	& [data-for="competitors"]{
-		padding: 0.5rem 0.25rem;
-		border: 1px solid transparent;
+   & [data-for="competitors"]{
+      padding: 0.5rem 0.25rem;
+      border: 1px solid transparent;
 
-		& > .input-group{
-			border: 1px solid transparent;
-		}
+      & > .input-group{
+         border: 1px solid transparent;
+      }
 
-		& .winner input{
-			background: yellow;
-			border-color: yellow;
-		}
-	}
-	& [data-for="competitors"]:hover{
-/*					background: #ccc;*/
-		border: 1px solid white;
-		cursor: pointer;
-	}
+      & .winner input{
+         background: yellow;
+         border-color: yellow;
+      }
+   }
+   & [data-for="competitors"]:hover{
+/*             background: #ccc;*/
+      border: 1px solid white;
+      cursor: pointer;
+   }
 
-	& [data-for="score"]{
-		background: #ddd;
-	}
+   & [data-for="score"]{
+      background: #ddd;
+   }
 
-	& [data-for="base-matches"],
-	& [data-for="competitors"]{
-		margin-right: 0.5rem;
-		border-radius: 6px;
-	}
+   & [data-for="base-matches"],
+   & [data-for="competitors"]{
+      margin-right: 0.5rem;
+      border-radius: 6px;
+   }
 }
 
 .overlay-btn{
-	/*Full height/width of it's given container, hence the relative position
-	  0 opacity initially so it can function as an overlay button, -100 top to
-	  position it properly over it's sibling content given it's the last child*/
+   /*Full height/width of it's given container, hence the relative position
+     0 opacity initially so it can function as an overlay button, -100 top to
+     position it properly over it's sibling content given it's the last child*/
     position: relative;
     height: 100%;
     width: 100%;
@@ -57,23 +57,23 @@
     top: -100%;
 }
 
-.tree-branch{				
-	border: 1px solid pink;
-	padding: 0.25rem;
+.tree-branch{           
+   border: 1px solid pink;
+   padding: 0.25rem;
 
-	& [data-for="previousRound"]{
-		display: inline-flex;
-		flex-direction: column;
-	}
+   & [data-for="previousRound"]{
+      display: inline-flex;
+      flex-direction: column;
+   }
 }
 
 .dlg{
-	border: 3px inset #bbb;
-	width: 75vw;
-	min-height: 40vh;
-	max-height: 75vh;
+   border: 3px inset #bbb;
+   width: 75vw;
+   min-height: 40vh;
+   max-height: 75vh;
 
-	&:focus{
+   &:focus{
         border: 3px inset #bbb;
     }
 }
