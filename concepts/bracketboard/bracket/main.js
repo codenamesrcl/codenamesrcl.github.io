@@ -2,30 +2,68 @@ import { test1, test2 } from './mockdata.js';
 import { Match } from './match.js';
 
 var _currentBoard,
-	_matchdialog;
+	_matchdialog,
+	_importdialog,
+	_competitorindex = 1,
+	_matchindex = 1,
+	_boardel;
 window.addEventListener('load', e=>{
-	var nameslist = document.querySelector('[data-for="nameslist"]'),
-		_matchdialog = document.querySelector('[data-for="dlg-record"]'),
+	_matchdialog = document.querySelector('[data-for="dlg-record"]');
+	_importdialog = document.querySelector('[data-for="dlg-import"]');
+	_boardel = document.querySelector('[data-for="board"]');
+
+	var nameslist = document.querySelector('[data-for="nameslist"]'),		
 		exportinput = document.querySelector('[data-for="export"]');
 	nameslist.value = test2;
 
 	document.querySelector('[data-fn="generateBracket"]').addEventListener('click', e=>{
-		var names = nameslist.value.trim().split('\n').map(n => n.trim());
+		var names = nameslist.value.trim().split('\n').map(n => {
+			return {
+				name: n.trim(),
+				id: _competitorindex++
+			}
+		});
 		createBoard(names);
 	})
 	document.querySelector('[data-fn="exportBracket"]').addEventListener('click', e=>{
-		var exportable = _currentBoard ? _currentBoard.exportBracket() : '';
+		var exportable = {
+			_competitorindex: _competitorindex,
+			_matchindex: _matchindex,
+			board: _currentBoard ? _currentBoard.exportBracket() : ''
+		}
+
 		exportinput.value = JSON.stringify(exportable, null, '   ');
+	})
+	document.querySelector('[data-fn="importBracket"]').addEventListener('click', e=>{		
+		_importdialog.showModal();
+	})
+	document.querySelector('[data-fn="importBracketJSON"]').addEventListener('click', e=>{
+		var input = _importdialog.querySelector('textarea');
+		try{
+			importBracket(JSON.parse(input.value));
+		}
+		catch(err){
+			alert('Unable to import bracket.  Check the JSON to make sure the formatting/structure is valid');
+		}
 	})
 })
 
 function importBracket(def){
+	console.log(def);
 
+	try{		
+		_currentBoard = _createMatch(def.board.round, def.board);
+		_boardel.innerHTML = '';
+		_boardel.append(_currentBoard.host)
+		_competitorindex = def._competitorindex;
+		_matchindex = def._matchindex;
+	}
+	catch(err){
+		alert('Error while creating imported board');
+	}
 }
 
 function createBoard(competitors = []){
-	var board = document.querySelector('[data-for="board"]');
-
 	console.log(`${competitors.length} competitors`)
 
 	//random selection of pairs by splicing each time
@@ -44,27 +82,41 @@ function createBoard(competitors = []){
 	}
 
 	var rounddex = 1;
-
 	while(pairs.length > 1){
 		pairs = generateRound(pairs, rounddex++);
 		console.log(pairs.length)
 	}
 
-	board.innerHTML = '';
-	board.append(pairs[0].host)
+	_boardel.innerHTML = '';
+	_boardel.append(pairs[0].host)
 	_currentBoard = pairs[0];
 }
 
-function createMatch(competitors = []){
+function _createMatch(round, importdef = null){
 	var el = document.createElement('section'),
-		match = new Match(el, { round: 0, dialog: _matchdialog });
+		match = new Match(el, { round: round, dialog: _matchdialog, id: _matchindex++, import: importdef });
 
 	match.render();
+	return match;
+}
+
+function createMatch(competitors = []){
+	var match = _createMatch(0);
 	for(let comp of competitors)
 		comp && match.addCompetitor(comp);
 
 	return match;
 }
+function createRound(matches = [], roundnum){
+	var round = _createMatch(roundnum);
+	for(let match of matches){
+		match && round.connectBaseMatch(match);
+		match && match.connectNextMatch(round);
+	}
+
+	return round;
+}
+
 
 function generateRound(matches, roundnum){
 	var rounds = [];
@@ -81,17 +133,4 @@ function generateRound(matches, roundnum){
 	}
 
 	return rounds;
-}
-
-function createRound(matches = [], round){
-	var el = document.createElement('section'),
-		round = new Match(el, { round: round, dialog: _matchdialog });
-
-	round.render();
-	for(let match of matches){
-		match && round.connectBaseMatch(match);
-		match && match.connectNextMatch(round);
-	}
-
-	return round;
 }
