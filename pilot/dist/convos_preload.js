@@ -700,7 +700,7 @@ Initialize the project structure, configure the environment files (appsettings),
 
     (Self-Correction): Ensure the prompt is robust enough for an agent to not hallucinate features but stick to the spec.
 
-    Okay, ready to generate.cw`,tokens:478}}}]},a=p;var u={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
+    Okay, ready to generate.cw`,tokens:478}}}]},a=p;var u={title:"Pilot - second prompt",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
 
 Start - Multi-question form system for evaluating Agentic Coding solutions
 Form.  Form contents will follow later.
