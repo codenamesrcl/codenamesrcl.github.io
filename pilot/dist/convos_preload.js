@@ -153,7 +153,7 @@ Assist the user by responding to their prompt.  If you are provided tools, use t
 
 ---
 
-These prompts are designed to be accessible to non-developers. They focus on the *purpose* of the tool, the *user experience*, and the *outcomes*\u2014not on technical architecture or implementation. When used with Cursor, they enable the agent to generate scaffolds that are intuitive, grounded in real-world needs, and easy to extend as the user gains confidence.`,tokens:680}}}]},e=r;var i={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
+These prompts are designed to be accessible to non-developers. They focus on the *purpose* of the tool, the *user experience*, and the *outcomes*\u2014not on technical architecture or implementation. When used with Cursor, they enable the agent to generate scaffolds that are intuitive, grounded in real-world needs, and easy to extend as the user gains confidence.`,tokens:680}}}]},e=r;var l={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
 
 Start - Multi-question form system for evaluating Agentic Coding solutions
 Form.  Form contents will follow later.
@@ -392,7 +392,7 @@ Can you help me scaffold this project by giving me a clear, beginner-friendly pl
 I'm not familiar with backend systems or databases yet \u2014 so keep it focused on front-end and local storage. I want to learn by doing, and I\u2019d like to be able to run this app in my browser without needing a server.
 
 Just give me a clean, simple, and actionable starting point \u2014 like a roadmap for a first-time developer.
-\`\`\``,tokens:342}}}]},t=i;var l={title:"Agentic Project Roadmap - Prompt refinement",messages:[{role:"user",type:"Basic",meta:{tokens:274,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I want to refine the following agentic coding prompt to be more akin to what a non-developer would prompt.  Can you produce a prompt more inline with this tone.
+\`\`\``,tokens:342}}}]},t=l;var d={title:"Agentic Project Roadmap - Prompt refinement",messages:[{role:"user",type:"Basic",meta:{tokens:274,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I want to refine the following agentic coding prompt to be more akin to what a non-developer would prompt.  Can you produce a prompt more inline with this tone.
 
 \`\`\`
 I need the form system to store evaluations locally, without sending any data to servers. This means all form data and user records should be saved directly to the user\u2019s device.  Update the project to support the following feature points.
@@ -428,7 +428,7 @@ Can you help me set up the system so that:
 - The data is protected with a password so only the user can read it (like locking a drawer with a key).
 - The app clearly tells users that their data is private and never shared with companies or outside parties.
 
-I just want peace of mind that my data stays safe, private, and only lives on my own device. Can you help me build that?`,tokens:311}}}]},n=l;var d={title:"Prompt refinement w/ reasoning",messages:[{role:"user",type:"Basic",meta:{tokens:280,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I wrote a coding prompt for an agentic coding tool.  I want to refine the prompt to be more akin to what a non-developer would prompt as I'm trying to evaluate the tool for beginners.
+I just want peace of mind that my data stays safe, private, and only lives on my own device. Can you help me build that?`,tokens:311}}}]},n=d;var c={title:"Prompt refinement w/ reasoning",messages:[{role:"user",type:"Basic",meta:{tokens:280,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I wrote a coding prompt for an agentic coding tool.  I want to refine the prompt to be more akin to what a non-developer would prompt as I'm trying to evaluate the tool for beginners.
 
 \`\`\`
 I need the form system to store evaluations locally, without sending any data to servers. This means all form data and user records should be saved directly to the user\u2019s device.  Update the project to support the following feature points.
@@ -569,7 +569,7 @@ Here are the specific things I want:
 
     Let's make sure the title is appropriate. "Privacy and Local Storage Request" works.
 
-    Okay, proceeding to generate response.cw`,tokens:157}}}]},o=d;var c={title:"Pilot roadmap - Refinement",messages:[{role:"user",type:"Basic",meta:{tokens:230,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a starter prompt to pass to the agentic coding assistant.
+    Okay, proceeding to generate response.cw`,tokens:157}}}]},o=c;var p={title:"Pilot roadmap - Refinement",messages:[{role:"user",type:"Basic",meta:{tokens:230,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a starter prompt to pass to the agentic coding assistant.
 
 -------
 Project Starter - Create the Project
@@ -700,4 +700,459 @@ Initialize the project structure, configure the environment files (appsettings),
 
     (Self-Correction): Ensure the prompt is robust enough for an agent to not hallucinate features but stick to the spec.
 
-    Okay, ready to generate.cw`,tokens:478}}}]},a=c;var s=[e,t,n,o,a];Object.freeze(s);var k=s;export{k as default};
+    Okay, ready to generate.cw`,tokens:478}}}]},a=p;var u={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
+
+Start - Multi-question form system for evaluating Agentic Coding solutions
+Form.  Form contents will follow later.
+
+Users would create a new form per platform/product they are evaluating
+Users can view other user's reviews/product evaluations
+
+----------------------------------------------------------------------
+
+Feature 1 - Populating the initial form
+
+Detail the basic sections and the questions within each section
+
+----------------------------------------------------------------------
+
+Feature 2 - Make it look pretty
+
+Make the form and the dashboard interface look pretty
+
+----------------------------------------------------------------------
+
+Feature 3 - Local data storage of records
+
+Store records saved from the form into a local sqlite database - phrase it as keep data local
+  - file storage as documents
+	
+----------------------------------------------------------------------
+
+Feature 4 - Basic User Account management
+
+Have user register and login before they are able to add/update reviews
+
+----------------------------------------------------------------------
+
+Feature 5 - Add snippets, screenshots to the existing basic
+
+Add visual documentation/proof on top of the Q/A style basic form
+
+----------------------------------------------------------------------
+
+Feature 6 - Demo downloads/section
+
+Allow reviewers to upload a zip containing the source code for each step of their eval so that readers can see how things changed over time`,tokens:259}}},{role:"assistant",type:"Basic",meta:{tokens:1860,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+You are an assistant to a lead software developer who is evaluating agentic coding tools and platforms.  Your role is to consider and compose things from a novice's perspective.
+
+# General Rules
+- Each example prompt that is to be sent to an LLM must be delivered in the following format
+    - a title to describe the prompt
+    - the prompt in a Markdown code block`,content:`### Title: Prompt \u2013 Feature 1: Populating the Initial Form (Basic Sections & Questions)
+
+\`\`\`markdown
+I need to design a multi-question form system for evaluating agentic coding platforms. The form should be structured into clear, logical sections to help users systematically assess each platform.
+
+Break down the form into the following core sections, and for each section, list 3\u20135 specific, focused questions that capture key aspects of agentic coding performance. The questions should be practical, measurable, and easy for non-experts to answer.
+
+Section 1: Core Functionality  
+- What are the primary tasks the agent can perform (e.g., code generation, debugging, refactoring)?  
+- How well does the agent understand and follow user instructions?  
+- Can it generate multiple solutions or alternatives to a problem?  
+- Does it handle edge cases or unexpected inputs effectively?  
+- How accurate is the generated code in producing expected results?
+
+Section 2: Code Quality & Safety  
+- Is the generated code clean, readable, and well-structured?  
+- Does it follow best practices (e.g., naming, comments, error handling)?  
+- Are there any security vulnerabilities or dangerous patterns (e.g., SQL injection, hardcoded secrets)?  
+- Does the agent include appropriate documentation or comments?  
+- How well does it handle type safety and edge cases?
+
+Section 3: User Experience & Interaction  
+- How intuitive is the interface for giving instructions to the agent?  
+- How responsive is the agent in generating output?  
+- Can users easily edit or refine their prompts and see changes in real time?  
+- Does it provide clear feedback on progress or errors?  
+- How easy is it to navigate between steps or views?
+
+Section 4: Error Handling & Recovery  
+- When an error occurs, does the agent explain the issue clearly?  
+- Can it suggest a fix or alternative approach?  
+- Does it retry or adapt when initial attempts fail?  
+- How transparent is the agent about when it doesn\u2019t know the answer?  
+- Does it provide a way to track or log failures?
+
+Section 5: Integration & Customization  
+- Can the agent integrate with common tools (e.g., GitHub, VS Code, terminal)?  
+- Can users customize the agent\u2019s behavior (e.g., prompt templates, rules)?  
+- Is there support for plugins or external APIs?  
+- How easy is it to extend or modify the agent\u2019s capabilities?  
+- Can it be used in a team or collaborative workflow?
+
+Each question should be phrased as a simple, closed-ended or rating-based question (e.g., "On a scale of 1\u20135, how would you rate the agent\u2019s ability to understand instructions?"). The form should be flexible enough to be reused across different platforms.
+\`\`\`
+
+---
+
+### Title: Prompt \u2013 Feature 2: Make it Look Pretty
+
+\`\`\`markdown
+I want the form creation and evaluation dashboard to have a clean, modern, and professional appearance. The design should feel intuitive and engaging, especially for users who may not be technical.
+
+Describe how to make the interface visually appealing and user-friendly, including:
+
+- A modern, minimalist design with soft colors (e.g., neutral tones with accent colors like blue or green for highlights)
+- Clear typography (easy-to-read fonts, consistent spacing, and hierarchy)
+- Responsive layout that works well on desktop and mobile devices
+- Visual indicators for form progress (e.g., step-by-step navigation bars)
+- Consistent buttons and form elements (e.g., primary action buttons, "Save", "Submit", "Edit")
+- Use of icons or illustrations to represent different form sections (e.g., a code icon for code quality)
+- A clean dashboard that shows a list of saved forms, user reviews, and ratings with visual summaries (e.g., average scores, recent activity)
+- Smooth animations or transitions when adding, editing, or viewing forms
+- A "preview" mode where users can see how their form will look before submitting
+
+The overall tone should feel trustworthy, approachable, and helpful \u2014 like a well-designed product review tool for developers. Avoid clutter; focus on clarity and usability.
+\`\`\`
+
+---
+
+### Title: Prompt \u2013 Feature 3: Local Data Storage of Records (Keep Data Local)
+
+\`\`\`markdown
+I need the form system to store user-generated evaluations locally, without sending any data to remote servers. This means all form data and user records should be saved directly to the user\u2019s device.
+
+Explain how to implement local data storage using SQLite, and describe how the system should behave in terms of user experience and security.
+
+Key points:
+- All form submissions, reviews, and user profiles are stored in a local SQLite database on the user\u2019s device.
+- The database file is saved in a secure, user-specific folder (e.g., \`user_data/forms.db\`).
+- Users can open and view their records offline \u2014 no internet connection required.
+- Data is not uploaded to any external server or cloud service.
+- The system should allow users to export their local database as a \`.db\` file or a readable CSV for backup or sharing.
+- File storage for uploaded documents (e.g., screenshots, logs) should be saved locally in a separate folder (e.g., \`user_data/uploads/\`).
+- All local data is encrypted at rest (using a simple password-protected encryption method, like AES-256).
+- Users are informed clearly that their data stays private and is not shared with third parties.
+
+Describe how this setup supports privacy, autonomy, and ease of use for users evaluating agentic tools without relying on internet connectivity.
+\`\`\`
+
+---
+
+### Title: Prompt \u2013 Feature 4: Basic User Account Management
+
+\`\`\`markdown
+I need to add user authentication so that only registered users can create, edit, or submit form evaluations.
+
+Create a simple user account system with the following features:
+
+- Users can register with an email address and a password.
+- Users must log in before they can:
+  - Create a new evaluation form
+  - Submit or update a review
+  - View or edit existing reviews
+- Passwords are stored securely using hashing (e.g., bcrypt) and never stored in plain text.
+- Users can log out at any time.
+- The system should allow users to recover their password via email (with a one-time link).
+- Each user has a unique profile that shows:
+  - Their name (optional)
+  - List of forms they\u2019ve created
+  - Summary of their average ratings across all reviews
+- The login screen should be simple and secure \u2014 no social logins or third-party integrations.
+
+Explain how this system protects user privacy and ensures that only authorized individuals can contribute to the evaluation database.
+\`\`\`
+
+---
+
+### Title: Prompt \u2013 Feature 5: Add Snippets, Screenshots to the Existing Basic Form
+
+\`\`\`markdown
+I want to enhance the form so that users can add visual evidence or real-world examples to support their evaluations.
+
+Describe how to add the ability for users to:
+
+- Insert code snippets (e.g., before and after agent output) directly into the form
+- Upload screenshots of the agent\u2019s interface, error messages, or generated code
+- Add short descriptive notes for each visual (e.g., "This shows the agent correctly refactored the function")
+- Embed images or code blocks in a clean, readable format (e.g., using markdown-style syntax or a simple image uploader)
+- Allow users to tag or label each visual (e.g., "Error Handling", "Code Quality", "User Flow")
+
+These visuals should be displayed alongside the text-based questions in the form, making it easier for other users to understand and verify the evaluation.
+
+Explain how this improves transparency and trust in the reviews \u2014 especially for developers who want to see real examples of agent performance.
+\`\`\`
+
+---
+
+### Title: Prompt \u2013 Feature 6: Demo Downloads/Section
+
+\`\`\`markdown
+I want reviewers to be able to upload a downloadable zip file that contains the source code for each step of their evaluation.
+
+Describe how to implement a "Demo Download" section in the form with the following features:
+
+- A button labeled "Upload Demo ZIP" that allows users to attach a compressed folder containing:
+  - Source code files (e.g., \`.py\`, \`.js\`, \`.ts\`)
+  - Screenshots or logs showing the agent\u2019s behavior
+  - A \`README.md\` file explaining the steps of the evaluation
+- The ZIP file is stored locally on the user\u2019s device and is only accessible to them (not shared publicly unless they choose to)
+- Users can add a description of what the demo shows (e.g., "This shows how the agent generated a React component from a prompt")
+- The demo section appears as a separate tab or section in the form, clearly labeled "Demo & Source Code"
+- After upload, the system generates a preview of the ZIP file (e.g., listing the files inside) and allows users to download it again
+- Users can remove or edit the demo at any time
+
+This feature enables readers to verify the agent\u2019s performance by reviewing actual code changes, making evaluations more credible and actionable.
+\`\`\``,tokens:1860}}},{role:"user",type:"Basic",meta:{tokens:80,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I also want a starter prompt for scaffolding the initial project as described below.  Frame it as a beginner coder prompting the agent:
+
+ Multi-question form system for evaluating Agentic Coding solutions
+Form.  Form contents will follow later.
+
+Users would create a new form per platform/product they are evaluating
+Users can view other user's reviews/product evaluations`,tokens:80}}},{role:"assistant",type:"Basic",meta:{tokens:342,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+You are an assistant to a lead software developer who is evaluating agentic coding tools and platforms.  Your role is to consider and compose things from a novice's perspective.
+
+# General Rules
+- Each example prompt that is to be sent to an LLM must be delivered in the following format
+    - a title to describe the prompt
+    - the prompt in a Markdown code block`,content:`### Title: Prompt \u2013 Starter Prompt for Beginner Coder (Project Scaffolding)
+
+\`\`\`markdown
+I'm a beginner coder trying to build a simple web app to evaluate agentic coding platforms. I want to create a multi-question form system where users can:
+
+- Create a new form for evaluating a specific agentic coding platform (like GitHub Copilot, Cursor, or Codeium)
+- Fill out the form with questions about functionality, code quality, and user experience
+- Save their form locally (no internet needed)
+- View and read other users' reviews and evaluations of the same platform
+
+I don't need it to be complex or fully featured right now \u2014 just a basic working prototype. I want to start small and build step by step.
+
+Can you help me scaffold this project by giving me a clear, beginner-friendly plan with:
+
+1. A simple project structure (folder layout)  
+2. A list of the first 3 core features to build (in order)  
+3. A basic description of what each feature should do  
+4. Suggested tools or libraries to use (e.g., HTML, CSS, JavaScript, SQLite, local storage)  
+5. A short step-by-step guide to get started (e.g., "Step 1: Create an index.html file...")
+
+I'm not familiar with backend systems or databases yet \u2014 so keep it focused on front-end and local storage. I want to learn by doing, and I\u2019d like to be able to run this app in my browser without needing a server.
+
+Just give me a clean, simple, and actionable starting point \u2014 like a roadmap for a first-time developer.
+\`\`\``,tokens:342}}},{role:"user",type:"Basic",meta:{tokens:512,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`what do you think about this prompt
+
+\`\`\`
+I need to add a fixed set of sections and questions to the forms so that each review has at least a partial set of consistent questions.  Add support for sections in the form template.  The form designer should be able to modify the set of fixed questions without code changes as the nature of reviews can change over time with changing priorities.  Below is the first section and questions for that section to include in the fixed set.
+
+Section 1: Core Functionality  
+- What are the primary tasks the agent can perform (e.g., code generation, debugging, refactoring)?  
+- How well does the agent understand and follow user instructions?  
+- Can it generate multiple solutions or alternatives to a problem?  
+- Does it handle edge cases or unexpected inputs effectively?  
+- How accurate is the generated code in producing expected results?
+
+Section 2: Code Quality & Safety  
+- Is the generated code clean, readable, and well-structured?  
+- Does it follow best practices (e.g., naming, comments, error handling)?  
+- Are there any security vulnerabilities or dangerous patterns (e.g., SQL injection, hardcoded secrets)?  
+- Does the agent include appropriate documentation or comments?  
+- How well does it handle type safety and edge cases?
+
+Section 3: User Experience & Interaction  
+- How intuitive is the interface for giving instructions to the agent?  
+- How responsive is the agent in generating output?  
+- Can users easily edit or refine their prompts and see changes in real time?  
+- Does it provide clear feedback on progress or errors?  
+- How easy is it to navigate between steps or views?
+
+Section 4: Error Handling & Recovery  
+- When an error occurs, does the agent explain the issue clearly?  
+- Can it suggest a fix or alternative approach?  
+- Does it retry or adapt when initial attempts fail?  
+- How transparent is the agent about when it doesn\u2019t know the answer?  
+- Does it provide a way to track or log failures?
+
+Section 5: Integration & Customization  
+- Can the agent integrate with common tools (e.g., GitHub, VS Code, terminal)?  
+- Can users customize the agent\u2019s behavior (e.g., prompt templates, rules)?  
+- Is there support for plugins or external APIs?  
+- How easy is it to extend or modify the agent\u2019s capabilities?  
+- Can it be used in a team or collaborative workflow?
+\`\`\``,rendertime:{start:"2026-03-06T20:52:57.742Z",end:"2026-03-06T20:52:58.291Z",time:{full:"549ms",short:"549ms"}},tokens:512}}},{role:"assistant",type:"Basic",meta:{tokens:1124,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen3.5:9b",temperature:.5,system:`# Role
+You are an assistant to a lead software developer who is evaluating agentic coding tools and platforms.  Your role is to consider and compose things from a experienced developer's perspective.
+
+# General Rules
+- Each example prompt that is to be sent to an LLM must be delivered in the following format
+    - a title to describe the prompt
+    - the prompt in a Markdown code block`,content:`This is a strong starting point for defining the content of your evaluation forms. From an experienced developer's perspective, here is my analysis of the prompt you wrote, along with suggestions to make it more robust for implementation (especially if you are using an LLM to generate the code or logic).
+
+### Critique & Analysis
+
+**Strengths:**
+*   **Clear Content:** The questions are specific and cover the essential dimensions of agentic coding (functionality, safety, UX, error handling, integration). This reduces ambiguity when building the form.
+*   **Consistency Focus:** Explicitly asking for a "fixed set" ensures data comparability across different reviews, which is crucial for benchmarking platforms.
+*   **Flexibility Requirement:** The request to modify questions "without code changes" correctly identifies the need for configuration-driven development (e.g., JSON schema or YAML config) rather than hardcoding HTML/DB columns.
+
+**Areas for Improvement:**
+1.  **"Without Code Changes" Implementation:** To an LLM or developer, this needs a specific technical definition. You should specify using a **JSON Schema** or **YAML file** stored in the project to define these questions. This allows the UI to read and render them dynamically.
+2.  **Data Structure:** The prompt mentions modifying questions but doesn't specify how the data is stored. If you want to keep it local (as per Feature 3), the form definition should be a separate file (e.g., \`form_schema.json\`) rather than part of the database records themselves, or the DB schema needs to be flexible (JSONB).
+3.  **UI Rendering:** The prompt implies the questions exist but doesn't explicitly tell the builder how they should appear on screen (e.g., "Render as a dynamic list based on the config file").
+4.  **Versioning:** If priorities change over time, you might need version control for the form schema so that old reviews aren't broken by new question structures.
+
+### Refined Prompt Suggestion
+
+Below is a refined version of your prompt. I have added technical constraints regarding configuration files and data storage to ensure the LLM (or developer) knows exactly how to implement the "no code change" requirement using JSON/YAML.
+
+\`\`\`markdown
+I need to implement a dynamic form system where the core evaluation questions are defined by a configuration file, not hard-coded into the application logic. This allows us to update the evaluation criteria without rebuilding the app.
+
+Please design the backend and frontend structure to support this:
+
+1. **Configuration File:** Create a JSON schema file (e.g., \`form_schema.json\`) that holds the fixed set of sections and questions.
+2. **Dynamic Rendering:** The UI must read this file and render the form fields dynamically. If I update the JSON, the new questions appear on the next load without code changes.
+3. **Data Storage:** Store user answers in a SQLite database. Use a flexible schema (e.g., JSONB column or separate rows per question) to accommodate changing question sets over time.
+4. **Content:** Include the following initial sections and questions in the configuration file:
+
+   Section 1: Core Functionality  
+   - What are the primary tasks the agent can perform (e.g., code generation, debugging, refactoring)?  
+   - How well does the agent understand and follow user instructions?  
+   - Can it generate multiple solutions or alternatives to a problem?  
+   - Does it handle edge cases or unexpected inputs effectively?  
+   - How accurate is the generated code in producing expected results?
+
+   Section 2: Code Quality & Safety  
+   - Is the generated code clean, readable, and well-structured?  
+   - Does it follow best practices (e.g., naming, comments, error handling)?  
+   - Are there any security vulnerabilities or dangerous patterns (e.g., SQL injection, hardcoded secrets)?  
+   - Does the agent include appropriate documentation or comments?  
+   - How well does it handle type safety and edge cases?
+
+   Section 3: User Experience & Interaction  
+   - How intuitive is the interface for giving instructions to the agent?  
+   - How responsive is the agent in generating output?  
+   - Can users easily edit or refine their prompts and see changes in real time?  
+   - Does it provide clear feedback on progress or errors?  
+   - How easy is it to navigate between steps or views?
+
+   Section 4: Error Handling & Recovery  
+   - When an error occurs, does the agent explain the issue clearly?  
+   - Can it suggest a fix or alternative approach?  
+   - Does it retry or adapt when initial attempts fail?  
+   - How transparent is the agent about when it doesn't know the answer?  
+   - Does it provide a way to track or log failures?
+
+   Section 5: Integration & Customization  
+   - Can the agent integrate with common tools (e.g., GitHub, VS Code, terminal)?  
+   - Can users customize the agent's behavior (e.g., prompt templates, rules)?  
+   - Is there support for plugins or external APIs?  
+   - How easy is it to extend or modify the agent's capabilities?  
+   - Can it be used in a team or collaborative workflow?
+
+5. **UI/UX:** Ensure the form looks consistent even when questions change. Use icons or labels for each section to help users navigate.
+
+Provide the code for the configuration file, the database schema logic to handle dynamic fields, and the frontend rendering logic.
+\`\`\``,reasoning:`Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **User's Goal:** The user wants my opinion on a specific prompt they've written.
+    *   **Context:** This is part of a larger project to evaluate agentic coding platforms. The project involves creating a multi-question form system.
+    *   **The Prompt in Question:** It asks for a "fixed set of sections and questions" but also wants the ability to modify them without code changes (configurable). It provides the specific content for 5 sections (Core Functionality, Code Quality & Safety, User Experience & Interaction, Error Handling & Recovery, Integration & Customization) with specific questions.
+    *   **My Role:** I am an assistant to a lead software developer evaluating agentic coding tools. I need to respond from an experienced developer's perspective.
+    *   **General Rules:** Each example prompt must be delivered in a specific format (Title + Markdown code block). However, this request is asking for my *opinion* on the prompt, not necessarily generating a new prompt for the LLM yet. Wait, looking at the "General Rules" section of the system instruction: "Each example prompt that is to be sent to an LLM must be delivered in the following format...". This usually applies when I am generating prompts *for* the user to send elsewhere. But here, the user is asking me ("what do you think about this prompt").
+    *   **Interpretation:** The system instruction says "Each example prompt that is to be sent to an LLM must be delivered in the following format". This implies if I am generating a prompt *for* them to use, I should use that format. If I am critiquing their prompt, I should probably explain my thoughts clearly, but since I'm acting as an assistant helping them compose prompts, I should likely frame my response as feedback or a refined version. However, the instruction says "Each example prompt...". It doesn't explicitly forbid non-prompt responses, but the persona is "assistant to a lead software developer... composing things from an experienced developer's perspective."
+    *   **Decision:** I will provide a critique/analysis of their prompt from the perspective of an experienced developer, highlighting strengths and potential weaknesses, and then offer a refined version or suggestions on how to optimize it for an LLM. I should probably wrap my final suggestion (if any) in the required format, but since they are asking for an opinion, I'll provide the analysis first, then perhaps a "Revised Prompt" option if needed, or just keep the critique clear. Actually, looking at the instruction "Each example prompt that is to be sent to an LLM must be delivered in the following format", this applies to *prompts I generate*. If I'm just giving advice, I don't necessarily need to wrap the advice in a code block unless I'm generating a new prompt for them.
+    *   **Refinement:** To stay safe and helpful, I will provide the critique in normal text (as it's an opinion) but if I suggest a revised prompt, I will use the format. Actually, the instruction says "Each example prompt that is to be sent to an LLM". This implies my output should generally follow the format if I'm providing a prompt. But here I'm evaluating *their* prompt. I'll structure my response as a professional critique, and perhaps offer a refined version of their prompt in the required format at the end, or just keep it conversational but high-quality.
+    *   **Wait, re-reading the system instruction:** "Each example prompt that is to be sent to an LLM must be delivered in the following format". This is a constraint on *my* output if I am generating a prompt for them. If I am just chatting/critiquing, does it apply? Usually, these constraints are strict for the task of "composing prompts". Since the user is asking "what do you think about this prompt", they want feedback. I should provide feedback. To be safe and adhere to the persona (experienced developer), I will give a structured critique. I will not wrap the entire response in a code block unless I am providing a *new* prompt for them to use. However, to ensure compliance with the "format" rule which might be interpreted strictly ("Each example prompt..."), I should check if my response counts as an "example prompt". It doesn't. It's feedback. But often, these system instructions mean "When you are outputting a prompt, use this format".
+    *   **Better approach:** I will provide the critique in plain text (as it's advice), but if I suggest a revised version of the prompt to send to an LLM, I will use the code block format for that specific suggestion. This balances helpfulness with compliance.
+    *   **Wait, one more check:** The instruction says "Each example prompt that is to be sent to an LLM must be delivered in the following format". It doesn't say "Your entire response must be in this format". It says "Each example prompt". So if I'm writing feedback, that's fine. If I write a new prompt for them, it must be in the format.
+    *   **Plan:**
+        1.  Acknowledge the prompt's intent (fixed questions + configurability).
+        2.  Analyze strengths (clear content, specific sections).
+        3.  Identify potential weaknesses/ambiguities (how to handle "without code changes" - JSON config? Database schema?), context for the AI agent building this.
+        4.  Suggest improvements (e.g., defining the data structure, handling dynamic forms).
+        5.  Offer a refined version of the prompt in the required format if I think it would be useful for them to send to an LLM to implement this feature.
+
+    *   **Wait, looking at the user's input:** They pasted a prompt they intend to use (or have used). They want my opinion.
+    *   **My Persona:** Experienced developer assistant.
+    *   **Tone:** Professional, constructive, technical but accessible.
+    *   **Constraint Check:** If I generate a new prompt for them based on my advice, I must use the Title + Code Block format. I will do that for the "Revised Prompt" suggestion to be safe and compliant.
+
+    *   **Critique Points:**
+        1.  **Configurability:** The user wants "without code changes". This implies a configuration file (JSON/YAML) or a schema definition. The prompt needs to specify *how* this is stored (e.g., \`schema.json\`).
+        2.  **Dynamic vs Fixed:** The prompt says "fixed set" but also "modify... without code changes". This is slightly contradictory terminology. Better to say "Core Schema" that can be versioned or configured.
+        3.  **UI/UX:** How will the user see these questions? The prompt should mention rendering logic.
+        4.  **Scalability:** What if they want to add custom sections later? The prompt mentions "fixed set" but implies changeability. Need to clarify if *only* fixed or fixed + custom.
+        5.  **LLM Clarity:** If this is for an LLM to build the feature, the prompt needs to be more specific about the implementation strategy (e.g., "Use a JSON schema file to define questions").
+
+    *   **Action:** I will provide a detailed critique and then offer an optimized version of the prompt in the required format.
+
+2.  **Drafting the Response:**
+    *   Start with a positive reinforcement (it's clear, well-structured).
+    *   Point out the "without code changes" requirement needs technical implementation details (JSON config, DB schema).
+    *   Suggest adding instructions on how the UI should handle these dynamic questions.
+    *   Provide the refined prompt in the required format.
+
+3.  **Final Polish:** Ensure the output matches the requested format for any prompts I generate. Since I am generating a "Revised Prompt" suggestion, I will use the format for that part. For the critique text, I will write normally.
+
+    *Wait, actually:* The instruction says "Each example prompt that is to be sent to an LLM must be delivered in the following format". It doesn't say "Your entire response must be a code block". So I can write normal text for the critique, and then put the refined prompt in the code block.
+
+    *Wait, looking at the instruction again:* "Each example prompt that is to be sent to an LLM must be delivered in the following format - a title to describe the prompt - the prompt in a Markdown code block".
+    Okay, so if I output a prompt for them to use, it must be in that format. If I'm just talking, it's fine.
+    However, to be most helpful and consistent with the persona, I will structure my feedback clearly, and then provide the "Optimized Prompt" in the required format at the end.
+
+    *Wait, one nuance:* The user asked "what do you think about this prompt". They want an opinion. I shouldn't just output a prompt. I should explain *why* it's good/bad.
+    Okay, I'll write the critique first, then offer the improved version in the code block format if they decide to use it.
+
+    *Wait, checking the instruction again:* "Each example prompt that is to be sent to an LLM must be delivered in the following format". This implies *if* I am sending a prompt. The user's input is not a prompt for me (it's a request). My output contains advice. If I include a suggested prompt, it must follow the format.
+    Okay, I will write the critique in normal text, and then provide a "Refined Prompt" option in the code block format.
+
+    *Wait, actually:* The system instruction is quite strict: "Each example prompt that is to be sent to an LLM must be delivered in the following format". This might mean *all* my outputs should follow this if they are prompts. But I am not sending a prompt to an LLM here (I am the AI). I am responding to the user. The user wants me to evaluate their prompt.
+    Okay, I will interpret "Each example prompt" as "If you generate a prompt for the user".
+    So, Critique = Normal text. Suggested Prompt = Code Block with Title.
+
+    Let's refine the critique:
+    1.  **Strengths:** Clear content, specific questions, good coverage of agent capabilities.
+    2.  **Weaknesses:** "Without code changes" is vague for an LLM implementation (needs JSON schema). Needs to specify how the UI renders these. Needs to handle versioning if priorities change.
+    3.  **Suggestion:** Add instructions on data structure (JSON/YAML) and UI rendering logic.
+
+    Let's draft the response.
+
+    *Self-Correction:* The instruction says "Each example prompt that is to be sent to an LLM must be delivered in the following format". This is a constraint on *my* behavior when generating prompts. It doesn't mean I can't write normal text. However, to be safe and consistent with the "Assistant" persona who helps compose prompts, I will ensure any *new prompt* I suggest follows the rules.
+
+    Okay, plan:
+    1.  Critique in plain text.
+    2.  Offer a refined version of their prompt (for them to send to an LLM) in the required format.
+
+    Wait, I should check if the user wants me to *act* as the LLM receiving this prompt? No, they are asking me ("what do you think"). So I am the expert.
+    Okay, I'll proceed with the critique + refined prompt approach.
+
+    *Wait, one more thing:* The instruction says "Each example prompt that is to be sent to an LLM must be delivered in the following format". It doesn't say I can't write normal text. But often these constraints are meant to ensure consistency. I will write the critique normally, and then provide the refined prompt in the code block.
+
+    Actually, looking at previous turns in the conversation (the user provided prompts for features 1-6), they want me to compose prompts *for them*. Now they are asking for my opinion on a specific text.
+    I will provide the analysis and then a polished version of their prompt that they can use to instruct an LLM to build this feature.
+
+    Let's make sure the refined prompt is high quality.
+    It should tell the LLM:
+    - Use a JSON schema for questions.
+    - Store in DB or file.
+    - Render dynamically.
+    - Keep the content provided.
+
+    Okay, ready to write.
+
+    Wait, I need to make sure I don't violate the "format" rule if I output a prompt. The rule says "Each example prompt that is to be sent to an LLM". So if I write a prompt for them to send elsewhere, it must be in the format.
+    Okay.
+
+    Let's start the response.
+    Structure:
+    1. Introduction (Positive feedback).
+    2. Technical Analysis (What works, what needs clarification).
+    3. Suggestions (JSON config, UI rendering, Versioning).
+    4. Refined Prompt (In the required format).
+
+    Wait, I should check if I need to wrap the *entire* response in a code block? No, "Each example prompt...". So only the prompts.
+    Okay.
+
+    One more thing: The user's prompt text is quite long. I should summarize it in my critique.
+    Okay.
+    Let's go.`,rendertime:{start:"2026-03-06T20:52:58.311Z",end:"2026-03-06T20:54:01.119Z",time:{full:"01m:02s:808ms",short:"01m:02s"}},tokens:1124}}}]},s=u;var i=[e,t,n,o,a,s];Object.freeze(i);var C=i;export{C as default};
