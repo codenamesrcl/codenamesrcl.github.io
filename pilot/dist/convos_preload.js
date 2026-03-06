@@ -1,4 +1,4 @@
-var s={title:"Empty Example",messages:[]},e=s;var r={title:"Agentic Coding Pilot Brainstorming",messages:[{role:"user",type:"Basic",meta:{tokens:32,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:"Generate a list of example web application projects that would be useful for evaluating an agentic coding pipeline/system",tokens:32}}},{role:"assistant",type:"Basic",meta:{tokens:317,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+var r={title:"Agentic Coding Pilot Brainstorming",messages:[{role:"user",type:"Basic",meta:{tokens:32,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:"Generate a list of example web application projects that would be useful for evaluating an agentic coding pipeline/system",tokens:32}}},{role:"assistant",type:"Basic",meta:{tokens:317,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
 You are a lead coordinator with the user as the director.  Your behavior is professional and detail oriented.
 
 # Tasks
@@ -153,7 +153,7 @@ Assist the user by responding to their prompt.  If you are provided tools, use t
 
 ---
 
-These prompts are designed to be accessible to non-developers. They focus on the *purpose* of the tool, the *user experience*, and the *outcomes*\u2014not on technical architecture or implementation. When used with Cursor, they enable the agent to generate scaffolds that are intuitive, grounded in real-world needs, and easy to extend as the user gains confidence.`,tokens:680}}}]},t=r;var i={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
+These prompts are designed to be accessible to non-developers. They focus on the *purpose* of the tool, the *user experience*, and the *outcomes*\u2014not on technical architecture or implementation. When used with Cursor, they enable the agent to generate scaffolds that are intuitive, grounded in real-world needs, and easy to extend as the user gains confidence.`,tokens:680}}}]},e=r;var i={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
 
 Start - Multi-question form system for evaluating Agentic Coding solutions
 Form.  Form contents will follow later.
@@ -392,7 +392,7 @@ Can you help me scaffold this project by giving me a clear, beginner-friendly pl
 I'm not familiar with backend systems or databases yet \u2014 so keep it focused on front-end and local storage. I want to learn by doing, and I\u2019d like to be able to run this app in my browser without needing a server.
 
 Just give me a clean, simple, and actionable starting point \u2014 like a roadmap for a first-time developer.
-\`\`\``,tokens:342}}}]},n=i;var l={title:"Agentic Project Roadmap - Prompt refinement",messages:[{role:"user",type:"Basic",meta:{tokens:274,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I want to refine the following agentic coding prompt to be more akin to what a non-developer would prompt.  Can you produce a prompt more inline with this tone.
+\`\`\``,tokens:342}}}]},t=i;var l={title:"Agentic Project Roadmap - Prompt refinement",messages:[{role:"user",type:"Basic",meta:{tokens:274,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I want to refine the following agentic coding prompt to be more akin to what a non-developer would prompt.  Can you produce a prompt more inline with this tone.
 
 \`\`\`
 I need the form system to store evaluations locally, without sending any data to servers. This means all form data and user records should be saved directly to the user\u2019s device.  Update the project to support the following feature points.
@@ -428,7 +428,7 @@ Can you help me set up the system so that:
 - The data is protected with a password so only the user can read it (like locking a drawer with a key).
 - The app clearly tells users that their data is private and never shared with companies or outside parties.
 
-I just want peace of mind that my data stays safe, private, and only lives on my own device. Can you help me build that?`,tokens:311}}}]},a=l;var d={title:"Prompt refinement w/ reasoning",messages:[{role:"user",type:"Basic",meta:{tokens:280,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I wrote a coding prompt for an agentic coding tool.  I want to refine the prompt to be more akin to what a non-developer would prompt as I'm trying to evaluate the tool for beginners.
+I just want peace of mind that my data stays safe, private, and only lives on my own device. Can you help me build that?`,tokens:311}}}]},n=l;var d={title:"Prompt refinement w/ reasoning",messages:[{role:"user",type:"Basic",meta:{tokens:280,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I wrote a coding prompt for an agentic coding tool.  I want to refine the prompt to be more akin to what a non-developer would prompt as I'm trying to evaluate the tool for beginners.
 
 \`\`\`
 I need the form system to store evaluations locally, without sending any data to servers. This means all form data and user records should be saved directly to the user\u2019s device.  Update the project to support the following feature points.
@@ -569,4 +569,135 @@ Here are the specific things I want:
 
     Let's make sure the title is appropriate. "Privacy and Local Storage Request" works.
 
-    Okay, proceeding to generate response.cw`,tokens:157}}}]},o=d;var c=[e,t,n,a,o],k=c;export{k as default};
+    Okay, proceeding to generate response.cw`,tokens:157}}}]},o=d;var c={title:"Pilot roadmap - Refinement",messages:[{role:"user",type:"Basic",meta:{tokens:230,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a starter prompt to pass to the agentic coding assistant.
+
+-------
+Project Starter - Create the Project
+
+Start - Multi-question form system for evaluating Agentic Coding solutions
+Form.  Form contents will follow later.
+
+Users would create a new form per platform/product they are evaluating
+Users can view other user's reviews/product evaluations
+
+Main platforms would be Dotnet 10, C#, MVC Web, local Sqlite database, Bootstrap for front-end, vanilla javascript, Serilog for logging, dependency injection for services, services would be the connection point to the database and supply data to the controllers/views.  Javascript and CSS should not be inline in the views, they should be in their own files.  Serilog should be logging to the sqlite database.  There should be a web viewer for the serilog logs.  Appsettings.json should have 5 levels, "Development", "Integration", "Testing", "Staging", and "Production".  Include a utility to access the appsettings values.`,tokens:230}}},{role:"assistant",type:"Basic",meta:{tokens:478,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen3.5:9b",temperature:.5,system:`# Role
+You are an assistant to a lead software developer who is evaluating agentic coding tools and platforms.  Your role is to consider and compose things from a experienced developer's perspective.
+
+# General Rules
+- Each example prompt that is to be sent to an LLM must be delivered in the following format
+    - a title to describe the prompt
+    - the prompt in a Markdown code block`,content:`# Agentic Evaluation Platform - Initial Scaffolding Prompt
+
+\`\`\`markdown
+Act as a Senior .NET Developer and Solution Architect. I need you to scaffold a new ASP.NET Core MVC web application project designed for evaluating agentic coding platforms. Follow these specific technical requirements and architectural constraints strictly:
+
+## Project Overview
+- **Name:** AgenticEvalPlatform
+- **Framework:** ASP.NET Core MVC (Targeting .NET 10)
+- **Purpose:** Multi-question form system to collect and display reviews/evaluations of various agentic coding solutions.
+- **Database:** Local SQLite database (Entity Framework Core).
+
+## Architecture & Structure
+1. **Dependency Injection:** Use DI for all services. Services must act as the connection point to the database and supply data to Controllers/Views.
+2. **Frontend:** 
+   - Use Bootstrap for styling.
+   - All JavaScript and CSS must be external files (located in \`/wwwroot/css\` and \`/wwwroot/js\`). Do NOT use inline styles or scripts in views.
+3. **Configuration:**
+   - \`appsettings.json\` must support 5 environment levels: "Development", "Integration", "Testing", "Staging", and "Production".
+   - Create a utility service (\`IConfigService\`) to access these values securely at runtime.
+
+## Logging Requirements
+- Use Serilog for all logging.
+- Configure Serilog to write logs directly into the SQLite database (not just files).
+- Create an MVC View that displays the logged entries from the database in a readable table format.
+
+## Core Functionality
+1. **Forms Management:** 
+   - Allow users to create a new "Evaluation Form" per platform/product being tested.
+   - Store form metadata and questions in the database.
+2. **Review System:**
+   - Users can submit evaluations against these forms.
+   - Implement a view to list and read reviews submitted by other users.
+3. **Data Models:** Create appropriate EF Core models for Forms, Questions, Evaluations, and Logs.
+
+## Immediate Task
+Initialize the project structure, configure the environment files (appsettings), set up the database context with SQLite provider, create the logging configuration, and scaffold the initial Controller/View/Model skeleton for the "Forms" and "Logs" features. Ensure all external assets are referenced correctly in the layout.
+\`\`\``,reasoning:`Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Role:** Assistant to a lead software developer evaluating agentic coding tools/platforms. Perspective should be experienced, practical, and structured.
+    *   **Task:** Compose a starter prompt to pass to an agentic coding assistant.
+    *   **Context:** The user has a roadmap for evaluating an agentic coding platform. They need a "Project Starter" prompt.
+    *   **Specific Requirements (from the user's input):**
+        *   Project: Multi-question form system for evaluating Agentic Coding solutions.
+        *   Features: Create new forms per platform/product, view other users' reviews/evaluations.
+        *   Tech Stack: .NET 10 (Note: .NET 10 is not out yet, likely means .NET 9 or a hypothetical future version, but I should stick to the user's spec or clarify. Actually, as an AI assistant, I should probably respect the spec but maybe note it if it's unrealistic. However, for the *prompt* generation task, I need to write the prompt that the developer will send to the agentic tool. The prompt needs to instruct the agent to build this.)
+        *   Specifics: C#, MVC Web, local Sqlite DB, Bootstrap (front-end), Vanilla JS, Serilog (logging to SQLite), DI for services, Services connect DB/Supply data to Controllers/Views, JS/CSS in separate files, Serilog logs viewer, Appsettings.json with 5 levels (Development, Integration, Testing, Staging, Production), Utility to access appsettings values.
+    *   **Output Format:** Each example prompt must be in a specific format: Title + Markdown code block containing the prompt.
+
+2.  **Determine the Goal of the Prompt:**
+    *   The prompt needs to be clear, actionable, and comprehensive enough for an agentic coding tool (like Cursor, Devin, GitHub Copilot Workspace, etc.) to understand the scope and constraints.
+    *   It should set the stage for the agent to scaffold the project correctly.
+    *   It needs to incorporate all the technical constraints provided in the "Project Starter" section.
+
+3.  **Drafting the Prompt Content:**
+    *   *Objective:* Build a multi-question form system for evaluating agentic coding solutions.
+    *   *Architecture:* .NET 10 (I will write ".NET 10" as requested, even if it's bleeding edge/future, to respect the user's specific roadmap), MVC Web, Sqlite.
+    *   *Frontend:* Bootstrap, Vanilla JS/CSS in external files.
+    *   *Logging:* Serilog -> SQLite + Web Viewer.
+    *   *Config:* Appsettings.json with 5 environments + Utility class for config access.
+    *   *Data Model:* Forms (platforms/products), Reviews/Evaluations.
+    *   *Actions:* Create new form, View others' reviews.
+
+4.  **Refining the Prompt for an Agent:**
+    *   Agents work best with clear context, constraints, and step-by-step instructions.
+    *   I need to make sure the prompt explicitly tells the agent *what* to build first (the scaffold).
+    *   I should emphasize separation of concerns (JS/CSS files, Services/Controllers).
+    *   I should mention the logging requirements clearly.
+
+5.  **Reviewing Constraints & Rules:**
+    *   Output format: Title + Markdown code block.
+    *   Role: Experienced developer perspective (implied in the quality of the prompt).
+    *   The user asked me to "compose a starter prompt".
+
+6.  **Constructing the Prompt:**
+    *   Start with a clear project description.
+    *   List technical requirements bullet-point style for clarity.
+    *   Define the core functionality (CRUD for Forms/Evaluations).
+    *   Specify the environment configuration strategy.
+    *   Request scaffolding of the solution structure.
+
+7.  **Final Polish:**
+    *   Ensure the prompt is self-contained.
+    *   Check against the "General Rules" regarding format.
+
+    *Self-Correction on .NET Version:* The user specified ".NET 10". As of my current knowledge, .NET 9 is the latest stable/preview. .NET 10 is likely a typo or future-proofing. However, since I am acting as an assistant to the lead dev who has a roadmap, I should probably respect their specific text in the prompt they generate for the agent, but maybe add a note? No, the instruction says "Each example prompt... must be delivered in the following format". I need to output the *prompt itself*. I will stick to the user's text (".NET 10") because that is part of their specific roadmap requirement, even if it sounds like a future version. It might be a hypothetical scenario or they mean .NET 8/9 but typed 10. I will use ".NET 10" as written in the requirements to ensure fidelity to the user's request.
+
+    *Wait, looking closer at the prompt instructions:* "Each example prompt that is to be sent to an LLM must be delivered in the following format - a title to describe the prompt - the prompt in a Markdown code block".
+    So I need to output exactly one Title and one Code Block containing the prompt text.
+
+    *Content of the Prompt:*
+    "Act as a senior .NET developer. Scaffold a new ASP.NET Core MVC web application..."
+    Include all constraints: Sqlite, Serilog, Bootstrap, DI, Config levels, etc.
+
+8.  **Finalizing the Output:**
+    *   Title: \`Agentic Coding Evaluation Platform - Project Scaffolding Prompt\`
+    *   Code Block: The actual text the developer will copy-paste into their agentic tool.
+
+    Let's write the prompt text carefully to ensure it captures all nuances (e.g., "JS/CSS not inline", "Serilog logs viewer").
+
+    *Drafting the prompt text:*
+    "Initialize a new ASP.NET Core MVC web application project named 'AgenticEvalPlatform'. Use .NET 10 SDK. Structure the solution with separate folders for Models, Controllers, Views, Services, and Scripts (for JS/CSS). Implement a local SQLite database using Entity Framework Core. Configure Serilog to write logs directly to the SQLite database and include an MVC view to display these logs. Create an Appsettings.json structure supporting 'Development', 'Integration', 'Testing', 'Staging', and 'Production' environments, along with a dedicated utility service to read configuration values. Implement a form system where users can create new evaluation forms for different platforms (e.g., Dotnet 10, C#, MVC Web) and view existing reviews from other users. Ensure all JavaScript and CSS are external files, not inline. Use Dependency Injection for all services connecting the database."
+
+    *Refining for Agent Clarity:* Make it more directive. "Create the following structure...", "Ensure...", etc.
+
+    *Wait, one more check:* The user's input says "Project Starter - Create the Project". This looks like a header they want included or context. I will incorporate that into the prompt instructions.
+
+    Let's assemble the final output.
+
+    *Title:* \`Agentic Evaluation Platform - Initial Scaffolding Prompt\`
+    *Code Block:* The prompt content.
+
+    (Self-Correction): Ensure the prompt is robust enough for an agent to not hallucinate features but stick to the spec.
+
+    Okay, ready to generate.cw`,tokens:478}}}]},a=c;var s=[e,t,n,o,a];Object.freeze(s);var k=s;export{k as default};
