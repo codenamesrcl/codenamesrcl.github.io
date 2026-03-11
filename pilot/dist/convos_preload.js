@@ -1,4 +1,4 @@
-var r={title:"Agentic Coding Pilot Brainstorming",messages:[{role:"user",type:"Basic",meta:{tokens:32,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:"Generate a list of example web application projects that would be useful for evaluating an agentic coding pipeline/system",tokens:32}}},{role:"assistant",type:"Basic",meta:{tokens:317,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+var l={title:"Agentic Coding Pilot Brainstorming",messages:[{role:"user",type:"Basic",meta:{tokens:32,included:!0,name:"User",contentselected:"1",_id:0},content:{1:{key:"1",content:"Generate a list of example web application projects that would be useful for evaluating an agentic coding pipeline/system",tokens:32}}},{role:"assistant",type:"Basic",meta:{tokens:317,included:!0,name:"HLPR",contentselected:"1",_id:1},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
 You are a lead coordinator with the user as the director.  Your behavior is professional and detail oriented.
 
 # Tasks
@@ -26,7 +26,7 @@ Assist the user by responding to their prompt.  If you are provided tools, use t
 - A CI/CD pipeline optimizer that suggests improvements to build times, test coverage, and deployment frequency  
 - A user experience (UX) design assistant that generates wireframes, prototypes, and accessibility recommendations from text descriptions  
 
-Each of these projects presents unique challenges and opportunities for an agentic coding pipeline to demonstrate capabilities in autonomy, reasoning, context awareness, and iterative improvement.`,tokens:317}}},{role:"user",type:"Basic",meta:{tokens:19,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:"remove anything that relates to deployment solutions",tokens:19}}},{role:"assistant",type:"Basic",meta:{tokens:274,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+Each of these projects presents unique challenges and opportunities for an agentic coding pipeline to demonstrate capabilities in autonomy, reasoning, context awareness, and iterative improvement.`,tokens:317}}},{role:"user",type:"Basic",meta:{tokens:19,included:!0,name:"User",contentselected:"1",_id:2},content:{1:{key:"1",content:"remove anything that relates to deployment solutions",tokens:19}}},{role:"assistant",type:"Basic",meta:{tokens:274,included:!0,name:"HLPR",contentselected:"1",_id:3},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
 You are a lead coordinator with the user as the director.  Your behavior is professional and detail oriented.
 
 # Tasks
@@ -52,7 +52,7 @@ Assist the user by responding to their prompt.  If you are provided tools, use t
 - A developer onboarding assistant that guides new team members through setup, tools, and workflows  
 - A feature flag management system with AI-driven rollout strategies and impact analysis  
 
-Each of these projects presents unique challenges and opportunities for an agentic coding pipeline to demonstrate capabilities in autonomy, reasoning, context awareness, and iterative improvement.`,tokens:274}}},{role:"user",type:"Basic",meta:{tokens:19,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:"group these by category/subject matter",tokens:19}}},{role:"assistant",type:"Basic",meta:{tokens:336,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+Each of these projects presents unique challenges and opportunities for an agentic coding pipeline to demonstrate capabilities in autonomy, reasoning, context awareness, and iterative improvement.`,tokens:274}}},{role:"user",type:"Basic",meta:{tokens:19,included:!0,name:"User",contentselected:"1",_id:4},content:{1:{key:"1",content:"group these by category/subject matter",tokens:19}}},{role:"assistant",type:"Basic",meta:{tokens:336,included:!0,name:"HLPR",contentselected:"1",_id:5},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
 You are a lead coordinator with the user as the director.  Your behavior is professional and detail oriented.
 
 # Tasks
@@ -90,7 +90,7 @@ Assist the user by responding to their prompt.  If you are provided tools, use t
 - **Repository & Code Health Monitoring**  
   - A repository monitoring system that detects security vulnerabilities, outdated dependencies, and performance issues  
 
-Each category represents a distinct domain where an agentic coding pipeline can evaluate its ability to understand context, generate accurate and safe outputs, and operate autonomously within well-defined functional boundaries.`,tokens:336}}},{role:"user",type:"Basic",meta:{tokens:41,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:"I'm going to be using Cursor as my coding agent.  Generate a starting prompt for each of these examples to get the projects scaffolded/started",tokens:41}}},{role:"assistant",type:"Basic",meta:{tokens:1518,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+Each category represents a distinct domain where an agentic coding pipeline can evaluate its ability to understand context, generate accurate and safe outputs, and operate autonomously within well-defined functional boundaries.`,tokens:336}}},{role:"user",type:"Basic",meta:{tokens:41,included:!0,name:"User",contentselected:"1",_id:6},content:{1:{key:"1",content:"I'm going to be using Cursor as my coding agent.  Generate a starting prompt for each of these examples to get the projects scaffolded/started",tokens:41}}},{role:"assistant",type:"Basic",meta:{tokens:1518,included:!0,name:"HLPR",contentselected:"1",_id:7},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
 You are a lead coordinator with the user as the director.  Your behavior is professional and detail oriented.
 
 # Tasks
@@ -102,7 +102,7 @@ Assist the user by responding to their prompt.  If you are provided tools, use t
 - Do not suggest next steps unless explicitly requested
 
 # Code Generation Rules
-- Deliver code snippets in code blocks`,content:'Certainly. Below are tailored starting prompts for each example project, designed to be used with Cursor as your coding agent. These prompts are structured to initiate scaffolding\u2014creating foundational files, directories, and basic structure\u2014while guiding the agent to maintain context, coherence, and project clarity.\n\n---\n\n**Category: Task & Project Management**  \n*Project: Task Management Application with Real-Time Collaboration*\n\n> "Scaffold a task management application using React and TypeScript. Create the following structure:  \n> - `src/` directory with `components/`, `hooks/`, `types/`, and `utils/`  \n> - `components/TaskList.tsx`, `TaskForm.tsx`, `TaskCard.tsx`, `RealTimeCollaborationPanel.tsx`  \n> - `types/task.d.ts` defining a Task interface with fields: id, title, description, status, createdAt, updatedAt, assignedTo  \n> - `hooks/useTasks.ts` for managing task state with real-time updates  \n> - A basic `App.tsx` that renders a header, task list, and form  \n> - Initialize a `package.json` with dependencies: React, React DOM, TypeScript, and Zustand for state management  \n> Ensure the app is modular, type-safe, and ready for AI-powered task suggestions and collaboration features."\n\n---\n\n**Category: Code Generation & Development Assistance**  \n*Project: Code Generation Tool from Natural Language*\n\n> "Scaffold a code generation tool that takes natural language prompts and outputs working code in multiple languages.  \n> - Create a `src/` directory with `parsers/`, `generators/`, `languages/`, and `types/`  \n> - Implement a `PromptParser.ts` that extracts intent, language, and parameters from user input  \n> - Create a `CodeGenerator.ts` that maps prompts to language-specific templates (e.g., JavaScript, Python, Rust)  \n> - Initialize a `languages/` folder with stubs for JavaScript, Python, and Go  \n> - Add a `prompt-to-code.ts` entry point that accepts a string prompt and returns a formatted code block  \n> - Generate a simple `App.tsx` that includes a text input, button, and code output area  \n> Ensure the output is syntactically valid, includes comments, and includes a basic error handling path."\n\n---\n\n**Category: Documentation & Knowledge Management**  \n*Project: Automated Documentation Generator*\n\n> "Scaffold an automated documentation generator that creates API docs, user guides, and code comments from source code.  \n> - Create a `src/` directory with `analyzers/`, `generators/`, `templates/`, and `types/`  \n> - Implement a `CodeAnalyzer.ts` that parses JS/TS files and extracts functions, parameters, and return types  \n> - Create a `DocGenerator.ts` that produces Markdown or HTML documentation from parsed data  \n> - Define a `template/api.md.j2` and `template/user-guide.md.j2` for structured output  \n> - Initialize a `process-docs.ts` script that takes a directory path and outputs documentation to a `docs/` folder  \n> - Add a `sample.ts` file to demonstrate parsing and output  \n> Ensure the output is clean, readable, and includes function signatures and examples."\n\n---\n\n**Category: Collaboration & Real-Time Interaction**  \n*Project: Real-Time Collaboration Platform with AI Suggestions*\n\n> "Scaffold a real-time collaboration platform where multiple users can edit code together with AI-driven live suggestions.  \n> - Create a `src/` directory with `components/`, `socket/`, `ai/`, `state/`, and `types/`  \n> - Implement a `RealTimeEditor.tsx` with shared state and live cursor tracking  \n> - Create a `LiveSuggestionsAI.ts` that listens to typing and generates context-aware suggestions (e.g., autocomplete, refactoring hints)  \n> - Add a `socket-client.ts` to handle real-time updates via WebSocket  \n> - Initialize `App.tsx` with editor, chat panel, and suggestion panel  \n> - Include a `types/EditorState.ts` for tracking cursor positions, edits, and user roles  \n> Ensure the platform supports real-time syncing and AI suggestions without disrupting user flow."\n\n---\n\n**Category: Security & Access Control**  \n*Project: Secure Authentication & Authorization System*\n\n> "Scaffold a secure authentication and authorization system with AI-driven anomaly detection.  \n> - Create a `src/` directory with `auth/`, `security/`, `policies/`, `types/`, and `services/`  \n> - Implement a `AuthService.ts` with login, registration, and token management  \n> - Create a `RolePolicyEngine.ts` that evaluates user roles and permissions  \n> - Add a `SecurityMonitor.ts` that logs and analyzes login patterns, IP changes, and failed attempts  \n> - Generate a `User.ts` model with fields: id, email, role, lastLogin, failedAttempts  \n> - Initialize a `App.tsx` with login screen and protected dashboard  \n> Ensure the system includes secure session handling and anomaly detection logic."\n\n---\n\n**Category: Feature & Release Management**  \n*Project: Feature Flag Management System*\n\n> "Scaffold a feature flag management system with AI-driven rollout strategies and impact analysis.  \n> - Create a `src/` directory with `flags/`, `rollouts/`, `analytics/`, `types/`, and `services/`  \n> - Define a `FeatureFlag.ts` interface with name, enabled status, target audience, rollout percentage  \n> - Implement a `RolloutStrategy.ts` that supports gradual, user-based, or geo-based rollouts  \n> - Create a `ImpactAnalyzer.ts` that estimates user impact based on feature usage and audience  \n> - Initialize a `FeatureManager.ts` that allows toggling features via API  \n> - Add a `dashboard.tsx` to visualize active flags and rollout status  \n> Ensure the system supports dynamic, AI-informed rollout decisions."\n\n---\n\n**Category: Repository & Code Health Monitoring**  \n*Project: Repository Monitoring System*\n\n> "Scaffold a repository monitoring system that detects security vulnerabilities, outdated dependencies, and performance issues.  \n> - Create a `src/` directory with `scanners/`, `health/`, `reports/`, `types/`, and `utils/`  \n> - Implement a `DependencyScanner.ts` that checks for outdated packages using a package lock file  \n> - Create a `SecurityVulnerabilityScanner.ts` that cross-references known CVEs  \n> - Develop a `PerformanceAnalyzer.ts` that evaluates code complexity, function length, and cyclomatic complexity  \n> - Generate a `HealthReport.ts` that aggregates findings into a structured JSON format  \n> - Initialize a `monitor-repo.ts` script that runs on a schedule and outputs a report to `reports/`  \n> - Add a `sample-project/` with a `package.json` to demonstrate scanning  \n> Ensure the output is actionable, prioritized, and includes severity levels."\n\n---\n\nEach of these prompts is designed to be executed directly in Cursor, prompting the agent to generate a minimal but functional scaffold that can be expanded upon with further AI-driven features or developer input. The prompts emphasize structure, type safety, and modularity\u2014key for effective agentic development.',tokens:1518}}},{role:"user",type:"Basic",meta:{tokens:44,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:"frame these prompts from the perspective of a user who is not experienced with code/development.  Effectively a non-developer asking a coding agent for project generation",tokens:44}}},{role:"assistant",type:"Basic",meta:{tokens:680,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+- Deliver code snippets in code blocks`,content:'Certainly. Below are tailored starting prompts for each example project, designed to be used with Cursor as your coding agent. These prompts are structured to initiate scaffolding\u2014creating foundational files, directories, and basic structure\u2014while guiding the agent to maintain context, coherence, and project clarity.\n\n---\n\n**Category: Task & Project Management**  \n*Project: Task Management Application with Real-Time Collaboration*\n\n> "Scaffold a task management application using React and TypeScript. Create the following structure:  \n> - `src/` directory with `components/`, `hooks/`, `types/`, and `utils/`  \n> - `components/TaskList.tsx`, `TaskForm.tsx`, `TaskCard.tsx`, `RealTimeCollaborationPanel.tsx`  \n> - `types/task.d.ts` defining a Task interface with fields: id, title, description, status, createdAt, updatedAt, assignedTo  \n> - `hooks/useTasks.ts` for managing task state with real-time updates  \n> - A basic `App.tsx` that renders a header, task list, and form  \n> - Initialize a `package.json` with dependencies: React, React DOM, TypeScript, and Zustand for state management  \n> Ensure the app is modular, type-safe, and ready for AI-powered task suggestions and collaboration features."\n\n---\n\n**Category: Code Generation & Development Assistance**  \n*Project: Code Generation Tool from Natural Language*\n\n> "Scaffold a code generation tool that takes natural language prompts and outputs working code in multiple languages.  \n> - Create a `src/` directory with `parsers/`, `generators/`, `languages/`, and `types/`  \n> - Implement a `PromptParser.ts` that extracts intent, language, and parameters from user input  \n> - Create a `CodeGenerator.ts` that maps prompts to language-specific templates (e.g., JavaScript, Python, Rust)  \n> - Initialize a `languages/` folder with stubs for JavaScript, Python, and Go  \n> - Add a `prompt-to-code.ts` entry point that accepts a string prompt and returns a formatted code block  \n> - Generate a simple `App.tsx` that includes a text input, button, and code output area  \n> Ensure the output is syntactically valid, includes comments, and includes a basic error handling path."\n\n---\n\n**Category: Documentation & Knowledge Management**  \n*Project: Automated Documentation Generator*\n\n> "Scaffold an automated documentation generator that creates API docs, user guides, and code comments from source code.  \n> - Create a `src/` directory with `analyzers/`, `generators/`, `templates/`, and `types/`  \n> - Implement a `CodeAnalyzer.ts` that parses JS/TS files and extracts functions, parameters, and return types  \n> - Create a `DocGenerator.ts` that produces Markdown or HTML documentation from parsed data  \n> - Define a `template/api.md.j2` and `template/user-guide.md.j2` for structured output  \n> - Initialize a `process-docs.ts` script that takes a directory path and outputs documentation to a `docs/` folder  \n> - Add a `sample.ts` file to demonstrate parsing and output  \n> Ensure the output is clean, readable, and includes function signatures and examples."\n\n---\n\n**Category: Collaboration & Real-Time Interaction**  \n*Project: Real-Time Collaboration Platform with AI Suggestions*\n\n> "Scaffold a real-time collaboration platform where multiple users can edit code together with AI-driven live suggestions.  \n> - Create a `src/` directory with `components/`, `socket/`, `ai/`, `state/`, and `types/`  \n> - Implement a `RealTimeEditor.tsx` with shared state and live cursor tracking  \n> - Create a `LiveSuggestionsAI.ts` that listens to typing and generates context-aware suggestions (e.g., autocomplete, refactoring hints)  \n> - Add a `socket-client.ts` to handle real-time updates via WebSocket  \n> - Initialize `App.tsx` with editor, chat panel, and suggestion panel  \n> - Include a `types/EditorState.ts` for tracking cursor positions, edits, and user roles  \n> Ensure the platform supports real-time syncing and AI suggestions without disrupting user flow."\n\n---\n\n**Category: Security & Access Control**  \n*Project: Secure Authentication & Authorization System*\n\n> "Scaffold a secure authentication and authorization system with AI-driven anomaly detection.  \n> - Create a `src/` directory with `auth/`, `security/`, `policies/`, `types/`, and `services/`  \n> - Implement a `AuthService.ts` with login, registration, and token management  \n> - Create a `RolePolicyEngine.ts` that evaluates user roles and permissions  \n> - Add a `SecurityMonitor.ts` that logs and analyzes login patterns, IP changes, and failed attempts  \n> - Generate a `User.ts` model with fields: id, email, role, lastLogin, failedAttempts  \n> - Initialize a `App.tsx` with login screen and protected dashboard  \n> Ensure the system includes secure session handling and anomaly detection logic."\n\n---\n\n**Category: Feature & Release Management**  \n*Project: Feature Flag Management System*\n\n> "Scaffold a feature flag management system with AI-driven rollout strategies and impact analysis.  \n> - Create a `src/` directory with `flags/`, `rollouts/`, `analytics/`, `types/`, and `services/`  \n> - Define a `FeatureFlag.ts` interface with name, enabled status, target audience, rollout percentage  \n> - Implement a `RolloutStrategy.ts` that supports gradual, user-based, or geo-based rollouts  \n> - Create a `ImpactAnalyzer.ts` that estimates user impact based on feature usage and audience  \n> - Initialize a `FeatureManager.ts` that allows toggling features via API  \n> - Add a `dashboard.tsx` to visualize active flags and rollout status  \n> Ensure the system supports dynamic, AI-informed rollout decisions."\n\n---\n\n**Category: Repository & Code Health Monitoring**  \n*Project: Repository Monitoring System*\n\n> "Scaffold a repository monitoring system that detects security vulnerabilities, outdated dependencies, and performance issues.  \n> - Create a `src/` directory with `scanners/`, `health/`, `reports/`, `types/`, and `utils/`  \n> - Implement a `DependencyScanner.ts` that checks for outdated packages using a package lock file  \n> - Create a `SecurityVulnerabilityScanner.ts` that cross-references known CVEs  \n> - Develop a `PerformanceAnalyzer.ts` that evaluates code complexity, function length, and cyclomatic complexity  \n> - Generate a `HealthReport.ts` that aggregates findings into a structured JSON format  \n> - Initialize a `monitor-repo.ts` script that runs on a schedule and outputs a report to `reports/`  \n> - Add a `sample-project/` with a `package.json` to demonstrate scanning  \n> Ensure the output is actionable, prioritized, and includes severity levels."\n\n---\n\nEach of these prompts is designed to be executed directly in Cursor, prompting the agent to generate a minimal but functional scaffold that can be expanded upon with further AI-driven features or developer input. The prompts emphasize structure, type safety, and modularity\u2014key for effective agentic development.',tokens:1518}}},{role:"user",type:"Basic",meta:{tokens:44,included:!0,name:"User",contentselected:"1",_id:8},content:{1:{key:"1",content:"frame these prompts from the perspective of a user who is not experienced with code/development.  Effectively a non-developer asking a coding agent for project generation",tokens:44}}},{role:"assistant",type:"Basic",meta:{tokens:680,included:!0,name:"HLPR",contentselected:"1",_id:9},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
 You are a lead coordinator with the user as the director.  Your behavior is professional and detail oriented.
 
 # Tasks
@@ -153,7 +153,7 @@ Assist the user by responding to their prompt.  If you are provided tools, use t
 
 ---
 
-These prompts are designed to be accessible to non-developers. They focus on the *purpose* of the tool, the *user experience*, and the *outcomes*\u2014not on technical architecture or implementation. When used with Cursor, they enable the agent to generate scaffolds that are intuitive, grounded in real-world needs, and easy to extend as the user gains confidence.`,tokens:680}}}]},e=r;var l={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
+These prompts are designed to be accessible to non-developers. They focus on the *purpose* of the tool, the *user experience*, and the *outcomes*\u2014not on technical architecture or implementation. When used with Cursor, they enable the agent to generate scaffolds that are intuitive, grounded in real-world needs, and easy to extend as the user gains confidence.`,tokens:680}}}],index:10},e=l;var d={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
 
 Start - Multi-question form system for evaluating Agentic Coding solutions
 Form.  Form contents will follow later.
@@ -392,7 +392,7 @@ Can you help me scaffold this project by giving me a clear, beginner-friendly pl
 I'm not familiar with backend systems or databases yet \u2014 so keep it focused on front-end and local storage. I want to learn by doing, and I\u2019d like to be able to run this app in my browser without needing a server.
 
 Just give me a clean, simple, and actionable starting point \u2014 like a roadmap for a first-time developer.
-\`\`\``,tokens:342}}}]},t=l;var d={title:"Agentic Project Roadmap - Prompt refinement",messages:[{role:"user",type:"Basic",meta:{tokens:274,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I want to refine the following agentic coding prompt to be more akin to what a non-developer would prompt.  Can you produce a prompt more inline with this tone.
+\`\`\``,tokens:342}}}]},t=d;var c={title:"Agentic Project Roadmap - Prompt refinement",messages:[{role:"user",type:"Basic",meta:{tokens:274,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I want to refine the following agentic coding prompt to be more akin to what a non-developer would prompt.  Can you produce a prompt more inline with this tone.
 
 \`\`\`
 I need the form system to store evaluations locally, without sending any data to servers. This means all form data and user records should be saved directly to the user\u2019s device.  Update the project to support the following feature points.
@@ -428,7 +428,7 @@ Can you help me set up the system so that:
 - The data is protected with a password so only the user can read it (like locking a drawer with a key).
 - The app clearly tells users that their data is private and never shared with companies or outside parties.
 
-I just want peace of mind that my data stays safe, private, and only lives on my own device. Can you help me build that?`,tokens:311}}}]},n=d;var c={title:"Prompt refinement w/ reasoning",messages:[{role:"user",type:"Basic",meta:{tokens:280,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I wrote a coding prompt for an agentic coding tool.  I want to refine the prompt to be more akin to what a non-developer would prompt as I'm trying to evaluate the tool for beginners.
+I just want peace of mind that my data stays safe, private, and only lives on my own device. Can you help me build that?`,tokens:311}}}]},n=c;var p={title:"Prompt refinement w/ reasoning",messages:[{role:"user",type:"Basic",meta:{tokens:280,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I wrote a coding prompt for an agentic coding tool.  I want to refine the prompt to be more akin to what a non-developer would prompt as I'm trying to evaluate the tool for beginners.
 
 \`\`\`
 I need the form system to store evaluations locally, without sending any data to servers. This means all form data and user records should be saved directly to the user\u2019s device.  Update the project to support the following feature points.
@@ -569,7 +569,7 @@ Here are the specific things I want:
 
     Let's make sure the title is appropriate. "Privacy and Local Storage Request" works.
 
-    Okay, proceeding to generate response.cw`,tokens:157}}}]},o=c;var u={title:"Pilot roadmap - Refinement",messages:[{role:"user",type:"Basic",meta:{tokens:230,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a starter prompt to pass to the agentic coding assistant.
+    Okay, proceeding to generate response.cw`,tokens:157}}}]},o=p;var u={title:"Pilot roadmap - Refinement",messages:[{role:"user",type:"Basic",meta:{tokens:230,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a starter prompt to pass to the agentic coding assistant.
 
 -------
 Project Starter - Create the Project
@@ -700,7 +700,7 @@ Initialize the project structure, configure the environment files (appsettings),
 
     (Self-Correction): Ensure the prompt is robust enough for an agent to not hallucinate features but stick to the spec.
 
-    Okay, ready to generate.cw`,tokens:478}}}]},a=u;var p={title:"Pilot - second prompt",messages:[{role:"user",type:"Basic",meta:{tokens:512,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`what do you think about this prompt
+    Okay, ready to generate.cw`,tokens:478}}}]},a=u;var h={title:"Pilot - second prompt",messages:[{role:"user",type:"Basic",meta:{tokens:512,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`what do you think about this prompt
 
 \`\`\`
 I need to add a fixed set of sections and questions to the forms so that each review has at least a partial set of consistent questions.  Add support for sections in the form template.  The form designer should be able to modify the set of fixed questions without code changes as the nature of reviews can change over time with changing priorities.  Below is the first section and questions for that section to include in the fixed set.
@@ -1019,4 +1019,263 @@ I need to help them refine their prompt for this setup. Let me think about what 
 
 I should provide a refined prompt that incorporates these requirements. Let me also note some technical considerations about storing form configurations in a database.
 
-Let me write a professional response that helps them refine their prompt for this specific setup.`,rendertime:{start:"2026-03-06T21:12:23.078Z",end:"2026-03-06T21:12:38.757Z",time:{full:"15s:679ms",short:"15s"}},tokens:743}}}]},s=p;var i=[e,t,n,o,a,s];Object.freeze(i);var C=i;export{C as default};
+Let me write a professional response that helps them refine their prompt for this specific setup.`,rendertime:{start:"2026-03-06T21:12:23.078Z",end:"2026-03-06T21:12:38.757Z",time:{full:"15s:679ms",short:"15s"}},tokens:743}}}]},i=h;var m={title:"Account Schema Prompt",index:2,messages:[{role:"user",type:"Basic",meta:{_id:0,tokens:295,reasoning_tokens:0,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have this starter prompt for the initial account system setup, I need to add some specifications. We will decide on the specifics of the role permission but we know we want admin,reviewer, and viewer roles. We will let the agent decide the implementation path, no specific output required to the LLM explicitly
+
+\`\`\`
+Design a database schema for a user authentication and authorization system with the following requirements:
+
+**Core Entities:**
+- Users table (id, username, email, password_hash, created_at, updated_at)
+- Roles table (id, role_name, description)
+- User_Roles junction table (user_id, role_id)
+- Permissions table (id, permission_name, resource, action)
+- Role_Permissions junction table (role_id, permission_id)
+
+**Role Definitions:**
+1. Admin - Full access to form templates, configs, all reviews, user profiles, password resets, permission management
+2. Reviewer - Can submit/view/edit own reviews only, view own profile only
+3. Viewer - Can view all reviews (read-only), view own profile only
+
+**Security Requirements:**
+- Passwords stored as salted hashes (never plain text)
+- Support for multiple roles per user
+- Soft deletes preferred over hard deletes
+
+Please provide:
+1. SQL schema with appropriate indexes and constraints
+2. Migration script example
+3. Sample seed data for the three role types
+4. Any additional tables needed for audit logging or session tracking
+\`\`\``,tokens:295,reasoning_tokencount:0,rendertime:{start:"2026-03-11T16:35:10.038Z",end:"2026-03-11T16:35:10.045Z",time:{full:"07ms",short:"7ms"}}}}},{role:"assistant",type:"Basic",meta:{_id:1,tokens:466,reasoning_tokens:4318,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen3.5:27b",temperature:.5,system:`# Role
+You are an assistant to a lead software developer who is evaluating agentic coding tools and platforms.  Your role is to consider and compose things from a experienced developer's perspective.
+
+# General Rules
+- Each example prompt that is to be sent to an LLM must be delivered in the following format
+    - a title to describe the prompt
+    - the prompt in a Markdown code block`,content:`### Account System Architecture & Schema Design Prompt
+
+\`\`\`markdown
+# Task: Design a User Authentication and Authorization System
+
+## Objective
+Design a robust database schema and authorization model for a new application account system. You have autonomy to determine the optimal implementation path, table structures, and permission granularity, provided you adhere to the core requirements below.
+
+## Mandatory Requirements
+
+### 1. Core Roles
+The system must support at least three distinct roles with the following high-level access patterns:
+- **Admin**: Full administrative privileges (user management, configuration, global permissions).
+- **Reviewer**: Limited access focused on content review workflows (edit/view own reviews).
+- **Viewer**: Read-only access to public-facing data and personal profile.
+
+*Note: You are responsible for defining the specific granular permissions (resources + actions) that satisfy these roles.*
+
+### 2. Security & Compliance
+- Passwords must be stored as salted hashes (never plain text). Specify the hashing algorithm recommendation.
+- Support for multiple roles per user is required.
+- Implement soft deletes for critical data tables where appropriate to preserve audit trails.
+- Include considerations for session management and audit logging.
+
+### 3. Schema Expectations
+While you should consider standard patterns (e.g., Users, Roles, Permissions junctions), you are encouraged to optimize the schema for performance and scalability (e.g., consideration of UUIDs vs. Integers, indexing strategies, normalization levels).
+
+## Deliverables
+Your response should include a comprehensive design proposal covering:
+
+1. **Database Schema**: Full SQL DDL with appropriate indexes, constraints, and data types.
+2. **Migration Strategy**: An example migration script showing how to initialize the schema.
+3. **Seed Data**: Sample data populating the three mandatory roles and at least one user per role.
+4. **Additional Artifacts**: Any necessary tables for audit logging, session tracking, or password reset tokens.
+5. **Design Rationale**: A brief explanation of your architectural choices (e.g., why you chose a specific permission model or indexing strategy).
+
+## Constraints
+- Do not hardcode specific business logic permissions (e.g., "form templates") unless necessary for the example; keep them generic enough to be adaptable.
+- Ensure the solution is production-ready and follows OWASP authentication best practices.
+\`\`\``,tokens:466,reasoning:`Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **User Goal:** The user wants to refine an existing starter prompt for an LLM agent. The context is setting up an initial account system (authentication/authorization).
+    *   **Current State:** The user provided a draft prompt that defines core entities, role definitions (Admin, Reviewer, Viewer), security requirements, and expected outputs (SQL schema, migration, seed data, audit/session tables).
+    *   **New Requirement:** The user wants to add specifications. Specifically:
+        *   Confirm the roles: Admin, Reviewer, Viewer.
+        *   Let the agent decide the implementation path (no specific output required explicitly beyond what's already there, but the prompt should encourage autonomy in design decisions).
+        *   The user is acting as a lead developer evaluating agentic tools, so the tone and quality of the prompt need to reflect that level of expertise.
+    *   **My Role:** I am an assistant to a lead software developer. I need to consider this from an experienced developer's perspective. I need to compose/refine the prompt based on the user's instructions.
+    *   **Constraint:** Each example prompt sent to an LLM must be delivered in a specific format: Title + Markdown code block.
+
+2.  **Evaluate the Existing Prompt:**
+    *   It's actually quite detailed already.
+    *   It specifies entities, roles, security, and outputs.
+    *   The user says "I need to add some specifications... We will decide on the specifics of the role permission but we know we want admin,reviewer, and viewer roles. We will let the agent decide the implementation path, no specific output required to the LLM explicitly".
+    *   Wait, looking closely at the user's instruction: "I need to add some specifications... We will let the agent decide the implementation path, no specific output required to the LLM explicitly".
+    *   This is slightly contradictory. The current prompt *does* require specific outputs (SQL schema, migration, etc.). The user says "no specific output required to the LLM explicitly" in the context of their instruction to me, but then provides a prompt that asks for outputs.
+    *   Interpretation: The user wants me to update the prompt they provided. They want to ensure the roles (Admin, Reviewer, Viewer) are clear, but they want the agent to have flexibility on *how* it implements permissions (RBAC vs ABAC, specific permission granularity, etc.) while still delivering a functional schema. The phrase "no specific output required to the LLM explicitly" might mean "don't constrain the agent too much on the *format* of the solution beyond what's necessary for a database schema task," or it might mean they want me to remove the rigid output requirements in the prompt if they conflict with "let the agent decide".
+    *   However, usually, when setting up an account system, you *do* want specific outputs (SQL, etc.). The user likely means "don't dictate the exact permission strings or logic flow, let the agent propose them."
+    *   Actually, re-reading: "We will let the agent decide the implementation path, no specific output required to the LLM explicitly". This might be an instruction for *me* (the assistant) on how to handle the prompt generation? No, it says "I have this starter prompt... I need to add some specifications."
+    *   Okay, the user wants me to refine the provided prompt. The key changes are:
+        1.  Ensure Admin, Reviewer, Viewer roles are specified. (They already are in the draft).
+        2.  Allow the agent flexibility on implementation details (implementation path).
+        3.  The phrase "no specific output required to the LLM explicitly" is confusing in the context of a prompt that asks for SQL/Migrations. I think the user means "Don't constrain the agent's *reasoning* or *architecture choices*, just ensure the core requirements are met." Or perhaps they want me to remove the rigid "Please provide 1, 2, 3, 4" list and make it more open-ended?
+        4.  Given the persona (Lead Dev evaluating tools), a prompt that is too rigid might stifle an agentic tool's ability to propose better patterns. A prompt that is too vague might produce garbage.
+        5.  Best approach: Keep the core requirements clear (Roles, Security) but soften the constraints on *how* permissions are modeled (e.g., allow the agent to suggest improvements over the provided junction tables if they see fit, or stick to them). The user said "We will let the agent decide the implementation path". This suggests I should remove the rigid entity definitions if they conflict with autonomy, OR keep them as a baseline but allow deviations.
+        6.  Actually, looking at the user's text: "I need to add some specifications... We will decide on the specifics of the role permission but we know we want admin,reviewer, and viewer roles." This implies the current prompt might be too specific on permissions or not specific enough on roles?
+        7.  The current prompt *does* list specific permissions for Admin (Full access...), Reviewer (own reviews...), Viewer (view all reviews...).
+        8.  The user says "We will decide on the specifics of the role permission". This implies I should *remove* the detailed permission lists in the prompt and just state the roles exist, letting the agent define the granular permissions.
+        9.  "no specific output required to the LLM explicitly" -> This likely means I shouldn't force the agent to output a specific file structure or language if it's not needed, but for a DB schema task, SQL is implied. I will interpret this as "Focus on the design and rationale, don't just dump code." OR it could mean the user wants me to stop here? No, they want me to compose the prompt.
+        10. Let's look at the instruction again: "Each example prompt that is to be sent to an LLM must be delivered in the following format...". I need to output the *refined prompt*.
+
+    *   **Refinement Strategy:**
+        *   Keep the Core Entities as a suggestion or baseline, but allow the agent to optimize (e.g., maybe they prefer a single \`permissions\` column with JSONB, or a more complex RBAC hierarchy).
+        *   Clarify the Roles (Admin, Reviewer, Viewer) are mandatory.
+        *   Remove the specific permission lists (since the user said "We will decide on the specifics of the role permission" - wait, actually they said "We will decide... but we know we want admin, reviewer, viewer". This is ambiguous. Does "We will decide" mean *later* or does it mean *the agent should propose them for us to decide*? Usually, in an agentic context, you want the agent to propose the implementation).
+        *   Let's assume the user wants the agent to define the granular permissions based on the high-level role descriptions.
+        *   The phrase "no specific output required to the LLM explicitly" is still tricky. If I'm asking for a DB schema, SQL is an output. I will interpret this as "Do not constrain the format too strictly (e.g., don't demand a specific migration tool like Flyway vs Liquibase), let the agent choose."
+        *   Actually, looking at the user's text: "I need to add some specifications... We will let the agent decide the implementation path". This suggests the current prompt is *too* prescriptive on the entities (Users table, Roles table...). I should relax that constraint so the agent can propose a better schema if they want (e.g., using UUIDs instead of IDs, adding \`is_active\` flags, etc.).
+        *   However, completely removing entity definitions might make the prompt too vague. I will frame them as "Baseline Requirements" rather than "Core Entities".
+        *   I need to make sure the output format instruction (Title + Code Block) is followed for *my* response.
+
+    *   **Wait, one more check:** The user says "Each example prompt that is to be sent to an LLM must be delivered in the following format". This applies to *my* output. I am generating a prompt *for* the user to send to their agent.
+    *   So I need to produce:
+        1.  A Title describing the prompt.
+        2.  The Prompt itself in a Markdown code block.
+
+    *   **Content of the Refined Prompt:**
+        *   Context: Account System Setup.
+        *   Mandatory Roles: Admin, Reviewer, Viewer.
+        *   Flexibility: Agent decides schema implementation (IDs vs UUIDs, specific permission granularity, etc.).
+        *   Security: Password hashing, soft deletes.
+        *   Outputs: Schema, Migration, Seed Data, Audit/Session considerations.
+        *   Tone: Professional, clear, allowing for agentic autonomy.
+
+    *   **Correction on "no specific output required":** The user wrote "no specific output required to the LLM explicitly". This might mean they don't want me to ask for a specific file format in the prompt? Or does it mean they don't want me to generate code right now?
+    *   Re-reading the conversation flow: The user is asking me to refine their starter prompt. They provided the starter prompt. They want me to add specifications (Roles) and relax constraints (Implementation path).
+    *   Okay, I will update the prompt to reflect that the Agent should propose the implementation details (specific permissions, exact column types) while adhering to the role hierarchy.
+
+3.  **Drafting the Prompt:**
+    *   Title: Account System Architecture & Schema Design
+    *   Content:
+        *   Objective: Design auth/authz system.
+        *   Roles: Admin, Reviewer, Viewer (Mandatory).
+        *   Flexibility: You decide the permission model granularity and schema optimizations.
+        *   Security: Hashing, Soft Deletes.
+        *   Deliverables: Schema, Migration, Seed Data, Audit/Session tables.
+
+4.  **Final Review against Constraints:**
+    *   Role: Assistant to Lead Dev.
+    *   Format: Title + Markdown Code Block for the prompt.
+    *   Perspective: Experienced Developer (ensure the prompt asks for best practices, not just basic compliance).
+
+5.  **Let's refine the "no specific output" part.**
+    *   If the user says "no specific output required to the LLM explicitly", they might mean "Don't tell the LLM exactly what files to create." But a DB schema task inherently requires SQL. I will interpret this as "Focus on the design rationale and flexibility, don't force a specific migration tool syntax."
+    *   Actually, looking at the user's input: "I have this starter prompt... I need to add some specifications... We will let the agent decide the implementation path, no specific output required to the LLM explicitly".
+    *   This might be an instruction to *me* about how to construct the prompt. i.e., "Don't make the prompt ask for specific outputs like '1. SQL 2. Migration'".
+    *   BUT, the user *provided* a prompt that asks for those outputs. And they want me to add specifications to *that*.
+    *   Okay, I will strike a balance. I will keep the request for deliverables (because you can't design a DB without showing the design) but phrase them as "Deliverables" rather than a rigid checklist, allowing the agent to structure the response logically.
+    *   Wait, the instruction "no specific output required to the LLM explicitly" is likely part of the user's description of what they want the prompt to achieve (i.e., they don't want to constrain the agent). I should ensure the prompt reflects that autonomy.
+
+    *   *Self-Correction*: The user's instruction "Each example prompt that is to be sent to an LLM must be delivered in the following format" applies to *my response*.
+    *   Okay, I will generate the refined prompt.
+
+    *   **Key Changes to make:**
+        1.  Explicitly state Admin, Reviewer, Viewer are required roles.
+        2.  Remove rigid permission definitions (let agent define granular permissions).
+        3.  Relax schema constraints (allow agent to choose UUID vs Int, specific column names, etc., as long as core concepts exist).
+        4.  Emphasize security best practices beyond just "salted hashes" (e.g., mention OWASP, rate limiting considerations in auth).
+        5.  Keep the deliverables but frame them as part of a comprehensive design proposal.
+
+6.  **Final Polish:** Ensure the tone is authoritative yet flexible.
+
+    *   *Wait, one nuance:* The user said "We will decide on the specifics of the role permission". This implies the *user* (Lead Dev) wants to decide later? Or the agent proposes and the user decides? "We will let the agent decide the implementation path". Okay, so the Agent decides the path. The User decides the specific permissions *after* seeing the proposal? Or does the user mean "I (the user) haven't decided the specifics yet, so don't hardcode them in the prompt"?
+    *   Yes, that's the most logical interpretation. The current prompt hardcodes "Admin - Full access to form templates...". The user wants to remove that specificity because they haven't finalized it. They only know the Roles exist.
+    *   So I must remove the detailed permission lists in the prompt and replace them with high-level expectations for the Agent to define.
+
+    *   **Revised Plan:**
+        1.  Title: Account System Schema & Authorization Design
+        2.  Prompt: Define the goal. List mandatory roles (Admin, Reviewer, Viewer). State that the agent should propose the permission granularity and schema structure. Include security requirements. Ask for the deliverables (Schema, Migration, Seeds, Audit) but allow flexibility in format.
+
+    *   **Wait, checking the "no specific output required" instruction again.**
+        *   "no specific output required to the LLM explicitly".
+        *   This might mean I should not include a "Please provide 1, 2, 3..." section in the prompt I generate for the user.
+        *   However, without that, the agent might just talk about theory.
+        *   Given the context (Lead Dev evaluating tools), they likely want to see code/schema.
+        *   I will interpret "no specific output required" as "Don't constrain the *format* of the output (e.g. don't say 'Output JSON'), but do require the content."
+        *   Actually, looking at the user's provided text: \`Please provide: 1... 2... 3...\`. The user says "I need to add some specifications... no specific output required to the LLM explicitly". This is contradictory. They provided a prompt with outputs, then said no specific output required.
+        *   Hypothesis: The user wants me to remove the \`Please provide\` section because they want the agent to determine what artifacts are necessary?
+        *   Better Hypothesis: The user is telling *me* (the assistant) that I don't need to generate a specific output for *them* right now, but rather just the prompt. No, that doesn't fit the "Role" description.
+        *   Best Hypothesis: The user wants the prompt to be less prescriptive about the *exact* deliverables list, allowing the agent to structure its response as it sees fit, while still covering the necessary ground. I will soften the "Please provide" section to "Include in your proposal:"
+
+    *   Let's stick to the core instruction: "I need to add some specifications... We will let the agent decide the implementation path".
+    *   I will refine the prompt to be more open-ended on the schema details but strict on the Roles and Security.
+
+    *   **Wait, one more thing:** The user said "Each example prompt that is to be sent to an LLM must be delivered in the following format... a title... the prompt in a Markdown code block".
+    *   This applies to my response. I need to make sure I don't just output text, but follow this format.
+
+    *   **Final Plan:**
+        1.  Create a Title.
+        2.  Create the Prompt inside a code block.
+        3.  In the prompt:
+            *   Keep Core Entities as "Baseline" not "Mandatory".
+            *   Keep Roles (Admin, Reviewer, Viewer) as Mandatory.
+            *   Remove specific permission lists (let agent define).
+            *   Keep Security requirements.
+            *   Keep Deliverables but allow flexibility in implementation details.
+
+    *   Wait, I need to check if I should include the "General Rules" in my output? No, those are instructions for me.
+    *   I just need to output the Title and the Prompt.
+
+    *   **Wait, one detail:** "no specific output required to the LLM explicitly".
+    *   If I remove the "Please provide" list, does it meet the requirement of a DB schema task?
+    *   I'll phrase it as "Your response should include..." rather than "Please provide 1,2,3". It's subtle but respects the instruction.
+
+    *   Actually, looking at the user's prompt again: \`I have this starter prompt... I need to add some specifications.\`
+    *   They want me to modify *their* prompt.
+    *   Okay, I will produce the modified version.
+
+    *   **Wait, is there a risk of over-engineering?**
+    *   The user is a Lead Dev evaluating tools. They want to see if the tool can handle ambiguity and make good decisions.
+    *   So the prompt should challenge the agent to justify its choices.
+    *   I will add a section asking for "Design Rationale".
+
+    *   **Final check on constraints:**
+        *   Title describing the prompt.
+        *   Prompt in Markdown code block.
+        *   Perspective: Experienced Developer.
+
+    *   Let's write it.
+
+    *   **Wait, I need to make sure I don't violate the "no specific output required" instruction.**
+    *   If the user says "no specific output required to the LLM explicitly", they might mean "Don't tell the LLM what files to create."
+    *   But a DB schema task requires SQL.
+    *   I will interpret this as: Do not constrain the agent to a specific migration tool (e.g. don't say "Write a Flyway script"). Just say "Provide migration scripts".
+    *   Okay, ready.
+
+    *   **Wait, one last check on the user's instruction:** "Each example prompt that is to be sent to an LLM must be delivered in the following format...". This means *my* response to the user must follow this format.
+    *   So I will output:
+        ### Title
+        \`\`\`markdown
+        Prompt content
+        \`\`\`
+    *   And nothing else? Or can I add explanation? "Your role is to consider and compose things from a experienced developer's perspective." Usually, I should provide the artifact cleanly. I will add a brief intro if needed but the core must be the formatted prompt.
+    *   Actually, standard practice for this type of instruction is to just provide the output in the requested format. I will minimize chatter.
+
+    *   **Wait, re-reading "no specific output required to the LLM explicitly"**.
+    *   This might mean the user doesn't want me to ask the LLM for specific outputs like "1. SQL 2. Migration".
+    *   Okay, I will change the "Please provide" section to be more descriptive of the *content* needed rather than a numbered list of deliverables.
+    *   Actually, I'll keep it structured but less rigid. "Ensure your response covers..."
+
+    *   **Wait, I need to check the user's input again.**
+    *   "I have this starter prompt... I need to add some specifications."
+    *   So I am editing the provided text.
+    *   Okay.
+
+    *   **Final decision on content:**
+        *   Title: Account System Architecture & Schema Design Prompt
+        *   Content: Refined version of their prompt, removing rigid permission lists, emphasizing role flexibility, keeping security strict.
+
+    *   **Wait, I need to make sure I don't miss the "Role Definitions" part.**
+    *   The user said "We know we want admin,reviewer, and viewer roles."
+    *   So I must keep those.
+    *   But remove the specific permissions attached to them in the draft ("Full access to form templates...").
+    *   Instead, say "Define appropriate granular permissions for each role".
+
+    *   **Let's go.**`,reasoning_tokencount:4318,rendertime:{start:"2026-03-11T16:35:10.053Z",end:"2026-03-11T16:37:53.226Z",time:{full:"02m:43s:173ms",short:"02m:43s"}}}}}]},s=m;var r=[e,t,n,o,a,i,s];Object.freeze(r);var q=r;export{q as default};
