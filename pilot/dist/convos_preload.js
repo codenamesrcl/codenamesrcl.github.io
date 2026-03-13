@@ -1,4 +1,4 @@
-var l={title:"Agentic Coding Pilot Brainstorming",messages:[{role:"user",type:"Basic",meta:{tokens:32,included:!0,name:"User",contentselected:"1",_id:0},content:{1:{key:"1",content:"Generate a list of example web application projects that would be useful for evaluating an agentic coding pipeline/system",tokens:32}}},{role:"assistant",type:"Basic",meta:{tokens:317,included:!0,name:"HLPR",contentselected:"1",_id:1},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
+var c={title:"Agentic Coding Pilot Brainstorming",messages:[{role:"user",type:"Basic",meta:{tokens:32,included:!0,name:"User",contentselected:"1",_id:0},content:{1:{key:"1",content:"Generate a list of example web application projects that would be useful for evaluating an agentic coding pipeline/system",tokens:32}}},{role:"assistant",type:"Basic",meta:{tokens:317,included:!0,name:"HLPR",contentselected:"1",_id:1},content:{1:{key:"1",model:"qwen/qwen3-4b-2507",temperature:.5,system:`# Role
 You are a lead coordinator with the user as the director.  Your behavior is professional and detail oriented.
 
 # Tasks
@@ -153,7 +153,7 @@ Assist the user by responding to their prompt.  If you are provided tools, use t
 
 ---
 
-These prompts are designed to be accessible to non-developers. They focus on the *purpose* of the tool, the *user experience*, and the *outcomes*\u2014not on technical architecture or implementation. When used with Cursor, they enable the agent to generate scaffolds that are intuitive, grounded in real-world needs, and easy to extend as the user gains confidence.`,tokens:680}}}],index:10},e=l;var d={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
+These prompts are designed to be accessible to non-developers. They focus on the *purpose* of the tool, the *user experience*, and the *outcomes*\u2014not on technical architecture or implementation. When used with Cursor, they enable the agent to generate scaffolds that are intuitive, grounded in real-world needs, and easy to extend as the user gains confidence.`,tokens:680}}}],index:10},e=c;var p={title:"Agentic Project Roadmap Pilot",messages:[{role:"user",type:"Basic",meta:{tokens:259,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a series of prompts describing each feature to create.:
 
 Start - Multi-question form system for evaluating Agentic Coding solutions
 Form.  Form contents will follow later.
@@ -392,7 +392,7 @@ Can you help me scaffold this project by giving me a clear, beginner-friendly pl
 I'm not familiar with backend systems or databases yet \u2014 so keep it focused on front-end and local storage. I want to learn by doing, and I\u2019d like to be able to run this app in my browser without needing a server.
 
 Just give me a clean, simple, and actionable starting point \u2014 like a roadmap for a first-time developer.
-\`\`\``,tokens:342}}}]},t=d;var c={title:"Agentic Project Roadmap - Prompt refinement",messages:[{role:"user",type:"Basic",meta:{tokens:274,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I want to refine the following agentic coding prompt to be more akin to what a non-developer would prompt.  Can you produce a prompt more inline with this tone.
+\`\`\``,tokens:342}}}]},t=p;var u={title:"Agentic Project Roadmap - Prompt refinement",messages:[{role:"user",type:"Basic",meta:{tokens:274,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I want to refine the following agentic coding prompt to be more akin to what a non-developer would prompt.  Can you produce a prompt more inline with this tone.
 
 \`\`\`
 I need the form system to store evaluations locally, without sending any data to servers. This means all form data and user records should be saved directly to the user\u2019s device.  Update the project to support the following feature points.
@@ -428,7 +428,7 @@ Can you help me set up the system so that:
 - The data is protected with a password so only the user can read it (like locking a drawer with a key).
 - The app clearly tells users that their data is private and never shared with companies or outside parties.
 
-I just want peace of mind that my data stays safe, private, and only lives on my own device. Can you help me build that?`,tokens:311}}}]},n=c;var p={title:"Prompt refinement w/ reasoning",messages:[{role:"user",type:"Basic",meta:{tokens:280,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I wrote a coding prompt for an agentic coding tool.  I want to refine the prompt to be more akin to what a non-developer would prompt as I'm trying to evaluate the tool for beginners.
+I just want peace of mind that my data stays safe, private, and only lives on my own device. Can you help me build that?`,tokens:311}}}]},n=u;var h={title:"Prompt refinement w/ reasoning",messages:[{role:"user",type:"Basic",meta:{tokens:280,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I wrote a coding prompt for an agentic coding tool.  I want to refine the prompt to be more akin to what a non-developer would prompt as I'm trying to evaluate the tool for beginners.
 
 \`\`\`
 I need the form system to store evaluations locally, without sending any data to servers. This means all form data and user records should be saved directly to the user\u2019s device.  Update the project to support the following feature points.
@@ -569,7 +569,7 @@ Here are the specific things I want:
 
     Let's make sure the title is appropriate. "Privacy and Local Storage Request" works.
 
-    Okay, proceeding to generate response.cw`,tokens:157}}}]},o=p;var u={title:"Pilot roadmap - Refinement",messages:[{role:"user",type:"Basic",meta:{tokens:230,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a starter prompt to pass to the agentic coding assistant.
+    Okay, proceeding to generate response.cw`,tokens:157}}}]},o=h;var m={title:"Pilot roadmap - Refinement",messages:[{role:"user",type:"Basic",meta:{tokens:230,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have a roadmap for a project to evaluate an agentic coding platform.  Can you compose a starter prompt to pass to the agentic coding assistant.
 
 -------
 Project Starter - Create the Project
@@ -700,7 +700,7 @@ Initialize the project structure, configure the environment files (appsettings),
 
     (Self-Correction): Ensure the prompt is robust enough for an agent to not hallucinate features but stick to the spec.
 
-    Okay, ready to generate.cw`,tokens:478}}}]},a=u;var h={title:"Pilot - second prompt",messages:[{role:"user",type:"Basic",meta:{tokens:512,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`what do you think about this prompt
+    Okay, ready to generate.cw`,tokens:478}}}]},i=m;var g={title:"Pilot - second prompt",messages:[{role:"user",type:"Basic",meta:{tokens:512,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`what do you think about this prompt
 
 \`\`\`
 I need to add a fixed set of sections and questions to the forms so that each review has at least a partial set of consistent questions.  Add support for sections in the form template.  The form designer should be able to modify the set of fixed questions without code changes as the nature of reviews can change over time with changing priorities.  Below is the first section and questions for that section to include in the fixed set.
@@ -1019,7 +1019,7 @@ I need to help them refine their prompt for this setup. Let me think about what 
 
 I should provide a refined prompt that incorporates these requirements. Let me also note some technical considerations about storing form configurations in a database.
 
-Let me write a professional response that helps them refine their prompt for this specific setup.`,rendertime:{start:"2026-03-06T21:12:23.078Z",end:"2026-03-06T21:12:38.757Z",time:{full:"15s:679ms",short:"15s"}},tokens:743}}}]},i=h;var m={title:"Account Schema Prompt",index:2,messages:[{role:"user",type:"Basic",meta:{_id:0,tokens:295,reasoning_tokens:0,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have this starter prompt for the initial account system setup, I need to add some specifications. We will decide on the specifics of the role permission but we know we want admin,reviewer, and viewer roles. We will let the agent decide the implementation path, no specific output required to the LLM explicitly
+Let me write a professional response that helps them refine their prompt for this specific setup.`,rendertime:{start:"2026-03-06T21:12:23.078Z",end:"2026-03-06T21:12:38.757Z",time:{full:"15s:679ms",short:"15s"}},tokens:743}}}]},s=g;var f={title:"Account Schema Prompt",index:2,messages:[{role:"user",type:"Basic",meta:{_id:0,tokens:295,reasoning_tokens:0,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I have this starter prompt for the initial account system setup, I need to add some specifications. We will decide on the specifics of the role permission but we know we want admin,reviewer, and viewer roles. We will let the agent decide the implementation path, no specific output required to the LLM explicitly
 
 \`\`\`
 Design a database schema for a user authentication and authorization system with the following requirements:
@@ -1278,4 +1278,785 @@ Your response should include a comprehensive design proposal covering:
     *   But remove the specific permissions attached to them in the draft ("Full access to form templates...").
     *   Instead, say "Define appropriate granular permissions for each role".
 
-    *   **Let's go.**`,reasoning_tokencount:4318,rendertime:{start:"2026-03-11T16:35:10.053Z",end:"2026-03-11T16:37:53.226Z",time:{full:"02m:43s:173ms",short:"02m:43s"}}}}}]},s=m;var r=[e,t,n,o,a,i,s];Object.freeze(r);var q=r;export{q as default};
+    *   **Let's go.**`,reasoning_tokencount:4318,rendertime:{start:"2026-03-11T16:35:10.053Z",end:"2026-03-11T16:37:53.226Z",time:{full:"02m:43s:173ms",short:"02m:43s"}}}}}]},a=f;var w={title:"Pilot Account Outline",index:2,messages:[{role:"user",type:"Basic",meta:{_id:0,tokens:404,reasoning_tokens:0,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:`I am building a web application, I have this idea of a feature to implement the creation of accounts, user roles, and account permissions. I need you to break this plan down into smaller tasks that can be implemented step by step. The idea is to simplify the general plan into multiple sub tasks and use each individual prompt separately and end up with the big picture.
+
+---
+
+- Create concept of accounts and account permissions
+  - Admin
+    - can create/edit/view form templates and form configurations
+    - can submit reviews
+    - can view all reviews
+    - cannot edit reviews
+    - can view all user profiles
+    - cannot view user passwords
+    - can reset user passwords
+    - can grant other accounts permissions
+  - Reviewer
+    - cannot view anything in form templates or form configurations
+    - can submit reviews
+    - can view only their reviews, does not have access to view other reviews
+    - can edit only their reviews
+    - can view only their user profile, does not have access to view other user profiles
+    - can view only their passwords, modify/reset it, does not have access to reset other passwords
+  - Viewer
+    - can view all reviews but not edit them
+    - can view only their user profile, does not have access to view other user profiles
+    - can view only their passwords, modify/reset it, does not have access to reset other passwords
+
+
+
+- Security setup
+    - user login / password combination 
+        - passwords are pre salted before encryption
+    - session management
+        - upon login users will be issued a session token which is valid for 1 hour
+        - all subsequent requests will use this session token in headers
+        - no cookies
+        - upon expiry window of current session, page will contact api for a re-issue of a new token using the current token as proof of identity
+        - tokens are IP-bound for security purposes.  little more annoying for disconnect/reconnect reasons.`,tokens:404,reasoning_tokencount:0,rendertime:{start:"2026-03-11T16:21:01.502Z",end:"2026-03-11T16:21:01.947Z",time:{full:"445ms",short:"445ms"}}}}},{role:"assistant",type:"Basic",meta:{_id:1,tokens:1988,reasoning_tokens:273,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen3.5:27b",temperature:.5,system:`# Role
+You are an assistant to a lead software developer who is evaluating agentic coding tools and platforms.  Your role is to consider and compose things from a experienced developer's perspective.
+
+# General Rules
+- Each example prompt that is to be sent to an LLM must be delivered in the following format
+    - a title to describe the prompt
+    - the prompt in a Markdown code block`,content:`# Authentication & Authorization System - Task Breakdown
+
+## 1. Database Schema for Users, Roles, and Permissions
+
+\`\`\`markdown
+Design a database schema for a user authentication and authorization system with the following requirements:
+
+**Core Entities:**
+- Users table (id, username, email, password_hash, created_at, updated_at)
+- Roles table (id, role_name, description)
+- User_Roles junction table (user_id, role_id)
+- Permissions table (id, permission_name, resource, action)
+- Role_Permissions junction table (role_id, permission_id)
+
+**Role Definitions:**
+1. Admin - Full access to form templates, configs, all reviews, user profiles, password resets, permission management
+2. Reviewer - Can submit/view/edit own reviews only, view own profile only
+3. Viewer - Can view all reviews (read-only), view own profile only
+
+**Security Requirements:**
+- Passwords stored as salted hashes (never plain text)
+- Support for multiple roles per user
+- Soft deletes preferred over hard deletes
+
+Please provide:
+1. SQL schema with appropriate indexes and constraints
+2. Migration script example
+3. Sample seed data for the three role types
+4. Any additional tables needed for audit logging or session tracking
+\`\`\`
+
+---
+
+## 2. Password Hashing and Authentication Logic
+
+\`\`\`markdown
+Implement secure password hashing and user authentication with these specifications:
+
+**Password Requirements:**
+- Pre-salt passwords before encryption (use bcrypt or Argon2)
+- Minimum password complexity rules (length, special characters, numbers)
+- Store salt separately from hash for verification
+
+**Authentication Flow:**
+1. User submits username/email and password
+2. Retrieve user record from database
+3. Apply same pre-salting process to input password
+4. Hash the salted password using the stored algorithm
+5. Compare with stored hash (constant-time comparison)
+6. Return success/failure without timing information leaks
+
+**Security Considerations:**
+- Rate limiting on login attempts (prevent brute force)
+- Account lockout after N failed attempts
+- Password change validation (new password cannot match last 3 passwords)
+
+Please provide:
+1. Password hashing utility function with configurable salt length
+2. Authentication service class/methods
+3. Input validation for password complexity
+4. Error handling that doesn't leak user existence information
+\`\`\`
+
+---
+
+## 3. Session Token Generation and Management
+
+\`\`\`markdown
+Implement a session token system with these requirements:
+
+**Token Specifications:**
+- JWT or custom secure token format (recommendation needed)
+- Valid for 1 hour (3600 seconds)
+- IP-bound tokens (store client IP, validate on each request)
+- No cookies - tokens passed in Authorization header only
+
+**Session Management:**
+1. Upon successful login, generate session token with:
+   - User ID
+   - Role IDs
+   - Expiration timestamp
+   - Client IP hash
+2. Store session in database (for revocation capability)
+3. Include token in HTTP Authorization header for all requests
+4. Validate token on each request (signature, expiry, IP match)
+
+**Token Refresh:**
+- Before expiration window (e.g., last 15 minutes), client can request refresh
+- Use current valid token to prove identity
+- Issue new token with fresh expiration
+- Invalidate old token immediately
+
+Please provide:
+1. Token generation function with configurable TTL
+2. Token validation middleware/service
+3. Session storage schema and CRUD operations
+4. Token refresh endpoint implementation
+5. Security considerations for IP-bound tokens (mobile users, proxies)
+\`\`\`
+
+---
+
+## 4. Permission Middleware and Authorization System
+
+\`\`\`markdown
+Build a permission-based authorization system with middleware:
+
+**Permission Structure:**
+- Define permissions as strings: "resource.action" (e.g., "forms.create", "reviews.view_all")
+- Map roles to their specific permissions based on the requirements below
+
+**Role Permissions Matrix:**
+
+| Permission | Admin | Reviewer | Viewer |
+|------------|-------|----------|--------|
+| forms.create | \u2713 | \u2717 | \u2717 |
+| forms.edit | \u2713 | \u2717 | \u2717 |
+| forms.view | \u2713 | \u2717 | \u2717 |
+| reviews.submit | \u2713 | \u2713 | \u2717 |
+| reviews.view_own | \u2713 | \u2713 | \u2717 |
+| reviews.view_all | \u2713 | \u2717 | \u2713 |
+| reviews.edit_own | \u2717 | \u2713 | \u2717 |
+| profiles.view_own | \u2713 | \u2713 | \u2713 |
+| profiles.view_all | \u2713 | \u2717 | \u2717 |
+| passwords.reset_own | \u2713 | \u2713 | \u2713 |
+| passwords.reset_other | \u2713 | \u2717 | \u2717 |
+| permissions.grant | \u2713 | \u2717 | \u2717 |
+
+**Implementation:**
+1. Permission decorator/middleware that checks user's roles against required permission
+2. Support for multiple required permissions (AND logic)
+3. Support for any of multiple permissions (OR logic)
+4. Graceful failure with appropriate HTTP status codes
+
+Please provide:
+1. Permission authorization middleware/decorator
+2. Role-to-permission mapping configuration
+3. Example route protection implementation
+4. Testing strategy for permission checks
+\`\`\`
+
+---
+
+## 5. Admin Role Implementation
+
+\`\`\`markdown
+Implement all Admin-specific functionality and endpoints:
+
+**Admin Capabilities:**
+1. Form Templates & Configurations (CRUD operations)
+2. Submit reviews
+3. View all reviews (read-only, cannot edit any reviews)
+4. View all user profiles (excluding passwords)
+5. Reset any user's password (with audit log)
+6. Grant/revoke permissions to other users
+
+**Implementation Requirements:**
+1. Form Template API endpoints with admin-only access
+2. Review submission endpoint for admins
+3. Reviews listing endpoint filtering by role permissions
+4. User profile viewing with password field masking
+5. Password reset workflow (generate temporary token, expiration)
+6. Permission management interface (add/remove roles from users)
+
+**Security:**
+- All actions logged to audit table
+- Admin cannot edit reviews (even their own)
+- Password resets require admin authentication + target user ID validation
+
+Please provide:
+1. API endpoint definitions for all admin functions
+2. Controller/service layer implementations
+3. Audit logging integration
+4. Input validation and sanitization for each endpoint
+\`\`\`
+
+---
+
+## 6. Reviewer Role Implementation
+
+\`\`\`markdown
+Implement all Reviewer-specific functionality with strict isolation:
+
+**Reviewer Capabilities:**
+1. Submit reviews (create new review records)
+2. View only their own reviews (filter by user_id)
+3. Edit only their own reviews (update operations scoped to owner)
+4. View only their own user profile
+5. Modify/reset their own password
+6. Cannot access form templates or configurations
+
+**Implementation Requirements:**
+1. Review creation endpoint with ownership tracking
+2. Review listing endpoint with automatic user_id filtering
+3. Review update endpoint with ownership validation
+4. Profile viewing restricted to current user only
+5. Self-service password reset flow (no admin intervention)
+
+**Security Considerations:**
+- All queries must include user_id filter from authenticated session
+- Prevent IDOR attacks (Insecure Direct Object References)
+- No access to form-related resources at all
+- Cannot view other reviewers' data
+
+Please provide:
+1. API endpoint definitions for reviewer functions
+2. Query building with automatic ownership scoping
+3. Service layer with permission checks before operations
+4. Error messages that don't reveal existence of other reviews/users
+\`\`\`
+
+---
+
+## 7. Viewer Role Implementation
+
+\`\`\`markdown
+Implement all Viewer-specific functionality (read-only access):
+
+**Viewer Capabilities:**
+1. View all reviews (read-only, no create/update/delete)
+2. View only their own user profile
+3. Modify/reset their own password
+4. Cannot submit or edit any reviews
+5. Cannot view form templates or configurations
+
+**Implementation Requirements:**
+1. Reviews read endpoint with full access to all review data
+2. Profile viewing restricted to current user only
+3. Self-service password reset (same as reviewer)
+4. All write operations on reviews return 403 Forbidden
+5. No access to form-related resources
+
+**Security Considerations:**
+- Enforce read-only at both API and database level
+- Prevent accidental write operations through proper HTTP method validation
+- Ensure review data is not modified even if user tries to send write request
+- Audit log all viewer access attempts
+
+Please provide:
+1. API endpoint definitions for viewer functions
+2. Read-only enforcement mechanisms
+3. Service layer with appropriate permission checks
+4. Response formatting that doesn't expose internal system structure
+\`\`\`
+
+---
+
+## 8. Security Hardening, Testing, and Integration
+
+\`\`\`markdown
+Implement security hardening, comprehensive testing, and final integration:
+
+**Security Hardening:**
+1. Rate limiting on all authentication endpoints (login, password reset)
+2. Account lockout after N failed attempts with exponential backoff
+3. Token refresh validation with IP binding enforcement
+4. SQL injection prevention in all queries
+5. XSS protection for any user-generated content in reviews
+6. CSRF protection consideration (even without cookies)
+
+**Testing Requirements:**
+1. Unit tests for password hashing and verification
+2. Integration tests for session management flow
+3. Permission matrix tests (each role vs each endpoint)
+4. Security tests: IDOR, brute force, token tampering
+5. Load testing for concurrent sessions
+
+**Documentation:**
+1. API documentation with authentication requirements per endpoint
+2. Security guidelines for developers
+3. Incident response plan for compromised accounts
+
+Please provide:
+1. Security checklist with implementation status
+2. Test suite structure and example tests
+3. Final integration verification steps
+4. Monitoring and alerting recommendations for security events
+\`\`\``,tokens:1988,reasoning:`The user is asking me to break down their authentication and authorization feature into smaller, manageable tasks that can be implemented step by step. They want to use individual prompts separately to build up the complete solution.
+
+From an experienced developer's perspective, I need to:
+1. Break this into logical, sequential tasks
+2. Make each task focused enough for a single LLM prompt
+3. Ensure dependencies are clear (some tasks must come before others)
+4. Consider best practices for security, testing, and implementation
+5. Format each as a proper prompt with title and code block
+
+Let me think about the logical flow:
+
+1. First, we need to define the data models (users, roles, permissions)
+2. Then implement authentication (login, password hashing, session tokens)
+3. Then implement authorization (permission checking middleware)
+4. Then build out the specific role-based features
+5. Finally, add security hardening and testing
+
+I should create about 6-8 focused prompts that cover:
+1. Database schema/models for users, roles, permissions
+2. Password hashing and authentication setup
+3. Session token generation and management
+4. Permission middleware/authorization system
+5. Admin role implementation
+6. Reviewer role implementation
+7. Viewer role implementation
+8. Security hardening and testing
+
+Let me compose these prompts in the required format.`,reasoning_tokencount:273,rendertime:{start:"2026-03-11T16:21:01.959Z",end:"2026-03-11T16:22:24.949Z",time:{full:"01m:22s:990ms",short:"01m:22s"}}}}}]},r=w;var y={title:"Users auth/access Expansion",index:5,messages:[{role:"assistant",type:"Basic",meta:{_id:0,tokens:1988,reasoning_tokens:273,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen3.5:27b",temperature:.5,system:`# Role
+You are an assistant to a lead software developer who is evaluating agentic coding tools and platforms.  Your role is to consider and compose things from a experienced developer's perspective.
+
+# General Rules
+- Each example prompt that is to be sent to an LLM must be delivered in the following format
+    - a title to describe the prompt
+    - the prompt in a Markdown code block`,content:`# Authentication & Authorization System - Task Breakdown
+
+## 1. Database Schema for Users, Roles, and Permissions
+
+\`\`\`markdown
+Design a database schema for a user authentication and authorization system with the following requirements:
+
+**Core Entities:**
+- Users table (id, username, email, password_hash, created_at, updated_at)
+- Roles table (id, role_name, description)
+- User_Roles junction table (user_id, role_id)
+- Permissions table (id, permission_name, resource, action)
+- Role_Permissions junction table (role_id, permission_id)
+
+**Role Definitions:**
+1. Admin - Full access to form templates, configs, all reviews, user profiles, password resets, permission management
+2. Reviewer - Can submit/view/edit own reviews only, view own profile only
+3. Viewer - Can view all reviews (read-only), view own profile only
+
+**Security Requirements:**
+- Passwords stored as salted hashes (never plain text)
+- Support for multiple roles per user
+- Soft deletes preferred over hard deletes
+
+Please provide:
+1. SQL schema with appropriate indexes and constraints
+2. Migration script example
+3. Sample seed data for the three role types
+4. Any additional tables needed for audit logging or session tracking
+\`\`\`
+
+---
+
+## 2. Password Hashing and Authentication Logic
+
+\`\`\`markdown
+Implement secure password hashing and user authentication with these specifications:
+
+**Password Requirements:**
+- Pre-salt passwords before encryption (use bcrypt or Argon2)
+- Minimum password complexity rules (length, special characters, numbers)
+- Store salt separately from hash for verification
+
+**Authentication Flow:**
+1. User submits username/email and password
+2. Retrieve user record from database
+3. Apply same pre-salting process to input password
+4. Hash the salted password using the stored algorithm
+5. Compare with stored hash (constant-time comparison)
+6. Return success/failure without timing information leaks
+
+**Security Considerations:**
+- Rate limiting on login attempts (prevent brute force)
+- Account lockout after N failed attempts
+- Password change validation (new password cannot match last 3 passwords)
+
+Please provide:
+1. Password hashing utility function with configurable salt length
+2. Authentication service class/methods
+3. Input validation for password complexity
+4. Error handling that doesn't leak user existence information
+\`\`\`
+
+---
+
+## 3. Session Token Generation and Management
+
+\`\`\`markdown
+Implement a session token system with these requirements:
+
+**Token Specifications:**
+- JWT or custom secure token format (recommendation needed)
+- Valid for 1 hour (3600 seconds)
+- IP-bound tokens (store client IP, validate on each request)
+- No cookies - tokens passed in Authorization header only
+
+**Session Management:**
+1. Upon successful login, generate session token with:
+   - User ID
+   - Role IDs
+   - Expiration timestamp
+   - Client IP hash
+2. Store session in database (for revocation capability)
+3. Include token in HTTP Authorization header for all requests
+4. Validate token on each request (signature, expiry, IP match)
+
+**Token Refresh:**
+- Before expiration window (e.g., last 15 minutes), client can request refresh
+- Use current valid token to prove identity
+- Issue new token with fresh expiration
+- Invalidate old token immediately
+
+Please provide:
+1. Token generation function with configurable TTL
+2. Token validation middleware/service
+3. Session storage schema and CRUD operations
+4. Token refresh endpoint implementation
+5. Security considerations for IP-bound tokens (mobile users, proxies)
+\`\`\`
+
+---
+
+## 4. Permission Middleware and Authorization System
+
+\`\`\`markdown
+Build a permission-based authorization system with middleware:
+
+**Permission Structure:**
+- Define permissions as strings: "resource.action" (e.g., "forms.create", "reviews.view_all")
+- Map roles to their specific permissions based on the requirements below
+
+**Role Permissions Matrix:**
+
+| Permission | Admin | Reviewer | Viewer |
+|------------|-------|----------|--------|
+| forms.create | \u2713 | \u2717 | \u2717 |
+| forms.edit | \u2713 | \u2717 | \u2717 |
+| forms.view | \u2713 | \u2717 | \u2717 |
+| reviews.submit | \u2713 | \u2713 | \u2717 |
+| reviews.view_own | \u2713 | \u2713 | \u2717 |
+| reviews.view_all | \u2713 | \u2717 | \u2713 |
+| reviews.edit_own | \u2717 | \u2713 | \u2717 |
+| profiles.view_own | \u2713 | \u2713 | \u2713 |
+| profiles.view_all | \u2713 | \u2717 | \u2717 |
+| passwords.reset_own | \u2713 | \u2713 | \u2713 |
+| passwords.reset_other | \u2713 | \u2717 | \u2717 |
+| permissions.grant | \u2713 | \u2717 | \u2717 |
+
+**Implementation:**
+1. Permission decorator/middleware that checks user's roles against required permission
+2. Support for multiple required permissions (AND logic)
+3. Support for any of multiple permissions (OR logic)
+4. Graceful failure with appropriate HTTP status codes
+
+Please provide:
+1. Permission authorization middleware/decorator
+2. Role-to-permission mapping configuration
+3. Example route protection implementation
+4. Testing strategy for permission checks
+\`\`\`
+
+---
+
+## 5. Admin Role Implementation
+
+\`\`\`markdown
+Implement all Admin-specific functionality and endpoints:
+
+**Admin Capabilities:**
+1. Form Templates & Configurations (CRUD operations)
+2. Submit reviews
+3. View all reviews (read-only, cannot edit any reviews)
+4. View all user profiles (excluding passwords)
+5. Reset any user's password (with audit log)
+6. Grant/revoke permissions to other users
+
+**Implementation Requirements:**
+1. Form Template API endpoints with admin-only access
+2. Review submission endpoint for admins
+3. Reviews listing endpoint filtering by role permissions
+4. User profile viewing with password field masking
+5. Password reset workflow (generate temporary token, expiration)
+6. Permission management interface (add/remove roles from users)
+
+**Security:**
+- All actions logged to audit table
+- Admin cannot edit reviews (even their own)
+- Password resets require admin authentication + target user ID validation
+
+Please provide:
+1. API endpoint definitions for all admin functions
+2. Controller/service layer implementations
+3. Audit logging integration
+4. Input validation and sanitization for each endpoint
+\`\`\`
+
+---
+
+## 6. Reviewer Role Implementation
+
+\`\`\`markdown
+Implement all Reviewer-specific functionality with strict isolation:
+
+**Reviewer Capabilities:**
+1. Submit reviews (create new review records)
+2. View only their own reviews (filter by user_id)
+3. Edit only their own reviews (update operations scoped to owner)
+4. View only their own user profile
+5. Modify/reset their own password
+6. Cannot access form templates or configurations
+
+**Implementation Requirements:**
+1. Review creation endpoint with ownership tracking
+2. Review listing endpoint with automatic user_id filtering
+3. Review update endpoint with ownership validation
+4. Profile viewing restricted to current user only
+5. Self-service password reset flow (no admin intervention)
+
+**Security Considerations:**
+- All queries must include user_id filter from authenticated session
+- Prevent IDOR attacks (Insecure Direct Object References)
+- No access to form-related resources at all
+- Cannot view other reviewers' data
+
+Please provide:
+1. API endpoint definitions for reviewer functions
+2. Query building with automatic ownership scoping
+3. Service layer with permission checks before operations
+4. Error messages that don't reveal existence of other reviews/users
+\`\`\`
+
+---
+
+## 7. Viewer Role Implementation
+
+\`\`\`markdown
+Implement all Viewer-specific functionality (read-only access):
+
+**Viewer Capabilities:**
+1. View all reviews (read-only, no create/update/delete)
+2. View only their own user profile
+3. Modify/reset their own password
+4. Cannot submit or edit any reviews
+5. Cannot view form templates or configurations
+
+**Implementation Requirements:**
+1. Reviews read endpoint with full access to all review data
+2. Profile viewing restricted to current user only
+3. Self-service password reset (same as reviewer)
+4. All write operations on reviews return 403 Forbidden
+5. No access to form-related resources
+
+**Security Considerations:**
+- Enforce read-only at both API and database level
+- Prevent accidental write operations through proper HTTP method validation
+- Ensure review data is not modified even if user tries to send write request
+- Audit log all viewer access attempts
+
+Please provide:
+1. API endpoint definitions for viewer functions
+2. Read-only enforcement mechanisms
+3. Service layer with appropriate permission checks
+4. Response formatting that doesn't expose internal system structure
+\`\`\`
+
+---
+
+## 8. Security Hardening, Testing, and Integration
+
+\`\`\`markdown
+Implement security hardening, comprehensive testing, and final integration:
+
+**Security Hardening:**
+1. Rate limiting on all authentication endpoints (login, password reset)
+2. Account lockout after N failed attempts with exponential backoff
+3. Token refresh validation with IP binding enforcement
+4. SQL injection prevention in all queries
+5. XSS protection for any user-generated content in reviews
+6. CSRF protection consideration (even without cookies)
+
+**Testing Requirements:**
+1. Unit tests for password hashing and verification
+2. Integration tests for session management flow
+3. Permission matrix tests (each role vs each endpoint)
+4. Security tests: IDOR, brute force, token tampering
+5. Load testing for concurrent sessions
+
+**Documentation:**
+1. API documentation with authentication requirements per endpoint
+2. Security guidelines for developers
+3. Incident response plan for compromised accounts
+
+Please provide:
+1. Security checklist with implementation status
+2. Test suite structure and example tests
+3. Final integration verification steps
+4. Monitoring and alerting recommendations for security events
+\`\`\``,tokens:1988,reasoning:`The user is asking me to break down their authentication and authorization feature into smaller, manageable tasks that can be implemented step by step. They want to use individual prompts separately to build up the complete solution.
+
+From an experienced developer's perspective, I need to:
+1. Break this into logical, sequential tasks
+2. Make each task focused enough for a single LLM prompt
+3. Ensure dependencies are clear (some tasks must come before others)
+4. Consider best practices for security, testing, and implementation
+5. Format each as a proper prompt with title and code block
+
+Let me think about the logical flow:
+
+1. First, we need to define the data models (users, roles, permissions)
+2. Then implement authentication (login, password hashing, session tokens)
+3. Then implement authorization (permission checking middleware)
+4. Then build out the specific role-based features
+5. Finally, add security hardening and testing
+
+I should create about 6-8 focused prompts that cover:
+1. Database schema/models for users, roles, permissions
+2. Password hashing and authentication setup
+3. Session token generation and management
+4. Permission middleware/authorization system
+5. Admin role implementation
+6. Reviewer role implementation
+7. Viewer role implementation
+8. Security hardening and testing
+
+Let me compose these prompts in the required format.`,reasoning_tokencount:273,rendertime:{start:"2026-03-11T16:21:01.959Z",end:"2026-03-11T16:22:24.949Z",time:{full:"01m:22s:990ms",short:"01m:22s"}}}}},{role:"user",type:"Basic",meta:{_id:3,tokens:48,reasoning_tokens:0,included:!0,name:"User",contentselected:"1"},content:{1:{key:"1",content:"Lets start refining prompt 2. We already have the authentication flow and the password hashing, we need to build out the password reset feature and also possibly check if the password lock feature exists already, so we can have it implemented if not.",tokens:48,reasoning_tokencount:0,rendertime:{start:"2026-03-13T17:55:58.840Z",end:"2026-03-13T17:55:58.853Z",time:{full:"13ms",short:"13ms"}}}}},{role:"assistant",type:"Basic",meta:{_id:4,tokens:593,reasoning_tokens:1151,included:!0,name:"HLPR",contentselected:"1"},content:{1:{key:"1",model:"qwen3.5:27b",temperature:.5,system:`# Role
+You are an assistant to a lead software developer who is evaluating agentic coding tools and platforms.  Your role is to consider and compose things from a experienced developer's perspective.
+
+# General Rules
+- Each example prompt that is to be sent to an LLM must be delivered in the following format
+    - a title to describe the prompt
+    - the prompt in a Markdown code block`,content:`# Authentication Security Expansion: Password Reset & Account Lockout
+
+\`\`\`markdown
+Review the existing authentication module and implement security enhancements for password recovery and account protection. 
+
+**Current State:**
+- Basic user login and registration are functional.
+- Password hashing (bcrypt/Argon2) is implemented.
+- Session management exists but may lack specific lockout logic.
+
+**Task 1: Audit Existing Lockout Logic**
+1. Analyze the current login endpoint implementation.
+2. Determine if there is existing tracking for failed login attempts (e.g., \`failed_attempts\` counter, \`locked_until\` timestamp in DB).
+3. If missing or insufficient, design and implement an account lockout mechanism:
+   - Lock account after N consecutive failed attempts (configurable, default 5).
+   - Implement exponential backoff or fixed cooldown period (e.g., 15 minutes).
+   - Ensure the counter resets on successful login.
+   - Prevent enumeration attacks (do not reveal if a user exists when lockout occurs).
+
+**Task 2: Implement Secure Password Reset Flow**
+Design and implement a "Forgot Password" workflow with the following security constraints:
+1. **Token Generation:**
+   - Generate cryptographically secure random tokens (UUID v4 or similar).
+   - Hash the token before storing in the database (never store plain text reset tokens).
+   - Include expiration timestamp (e.g., 1 hour validity).
+2. **Request Flow:**
+   - Endpoint accepts email/username.
+   - If user exists, generate token and trigger email notification (abstracted service interface).
+   - If user does not exist, return success response anyway to prevent user enumeration.
+3. **Reset Validation:**
+   - Endpoint accepts the token (from URL/email) and new password.
+   - Verify token hash against stored value.
+   - Check expiration time.
+   - Invalidate token immediately after successful use (one-time use only).
+   - Apply existing password complexity rules to the new password.
+4. **Database Schema Updates:**
+   - Add necessary columns to \`users\` table or a separate \`password_reset_tokens\` table (id, user_id, token_hash, expires_at, used_at).
+
+**Security Requirements:**
+- All reset tokens must be hashed before storage.
+- Rate limit the "Request Reset" endpoint per IP/User to prevent spamming.
+- Ensure no timing attacks are possible during token validation.
+- Log all password reset attempts (success/failure) for audit purposes.
+
+**Deliverables:**
+1. Code diff or new files for the password reset service/controller.
+2. Database migration script for lockout fields and reset tokens.
+3. Updated login logic to include lockout checks (if missing).
+4. Unit tests covering: 
+   - Successful token generation and validation.
+   - Expired token rejection.
+   - Used token rejection.
+   - Account lockout triggering and unlocking.
+5. Security checklist confirming no user enumeration leaks in the reset flow.
+\`\`\``,tokens:593,reasoning:`Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Goal:** Refine Prompt 2 from the previous set of prompts (which was about Password Hashing and Authentication Logic).
+    *   **Context:** The user states they *already* have authentication flow and password hashing implemented.
+    *   **New Requirements:**
+        *   Build out a password reset feature.
+        *   Check if a password lock feature exists (and implement it if not).
+    *   **Role:** Assistant to a lead software developer evaluating agentic coding tools.
+    *   **Format:** Title + Markdown code block for the prompt.
+    *   **Perspective:** Experienced developer (pragmatic, security-focused, clear requirements).
+
+2.  **Evaluate the Original Prompt 2:**
+    *   The original Prompt 2 was: "Implement secure password hashing and user authentication..."
+    *   It covered hashing, auth flow, security considerations (rate limiting, lockout), and specific deliverables (hashing utility, auth service, validation, error handling).
+    *   Since the user says they *already* have hashing and auth flow, I need to shift focus. The new prompt should assume those exist but need integration/expansion for reset and lockout mechanisms.
+
+3.  **Determine the Scope of the Refined Prompt:**
+    *   **Assumption:** Existing codebase has basic login/register/hash.
+    *   **Task 1: Password Reset Flow.** Needs to be secure (tokens, expiration, one-time use). Needs to handle email notification (or at least the token generation/validation logic).
+    *   **Task 2: Account Lockout/Password Lock.** Check existing implementation. If missing, implement it (failed attempt tracking, lockout duration, unlock mechanism).
+    *   **Security:** Token leakage prevention, timing attacks, secure storage of reset tokens.
+    *   **Deliverables:** Code for reset flow, code for lockout logic, integration points with existing auth.
+
+4.  **Drafting the Prompt (Iterative Process):**
+    *   *Attempt 1 (Mental):* Hey, we have login. Now do password reset. Check if we have account locking. If not, add it. Make sure tokens expire.
+    *   *Critique 1:* Too vague. Needs to sound like a lead dev talking to an agent. Needs specific technical constraints.
+    *   *Attempt 2 (Mental):* Review the existing auth module. Implement a 'forgot password' endpoint that generates a token sent via email. Validate the token. Also, look at the login function. Does it track failed attempts? If not, add a lockout mechanism after 5 tries.
+    *   *Critique 2:* Better. Needs more detail on security (token hashing, expiration), database schema changes needed for tokens/lockouts, and integration specifics.
+    *   *Attempt 3 (Final Polish):* Structure it as a "Feature Expansion & Security Audit" prompt. Explicitly state what exists vs. what needs building. Require code reviews of existing logic where applicable. Focus on the specific mechanisms (reset tokens, lockout counters).
+
+5.  **Refining for the "Lead Developer" Persona:**
+    *   Use terms like "audit," "integration," "idempotency," "secure token generation."
+    *   Emphasize security best practices (hashing reset tokens, not storing them plain).
+    *   Ask for database schema updates.
+    *   Ask for error handling that doesn't leak info.
+
+6.  **Finalizing the Prompt Structure:**
+    *   Title: Clear and descriptive.
+    *   Context: What exists vs. what's missing.
+    *   Task 1: Password Reset (Token generation, validation, expiry).
+    *   Task 2: Account Lockout (Audit existing, implement if missing).
+    *   Security Constraints: Specifics on token handling and rate limiting.
+    *   Deliverables: Code snippets, schema changes, test cases.
+
+7.  **Review against General Rules:**
+    *   Must have a title.
+    *   Must have the prompt in a Markdown code block.
+    *   Must reflect experienced developer perspective.
+
+8.  **Constructing the Output:** (Self-Correction during drafting)
+    *   Make sure to explicitly mention checking existing code, not just writing new code from scratch. The prompt should instruct the agent to analyze first.
+    *   Ensure the password reset flow includes email service abstraction (since we might not have a real SMTP configured yet).
+
+9.  **Final Polish:** Check against the user's specific instruction: "Lets start refining prompt 2... build out the password reset feature and also possibly check if the password lock feature exists already".
+
+    *   *Decision:* I will create a prompt that instructs the agent to first audit the existing auth logic for lockout features, then implement the reset flow, ensuring both adhere to strict security standards.
+
+    *(Self-Correction)*: Wait, the user wants me to output the *refined prompt* that they will send to an LLM. I need to make sure it's ready to copy-paste.
+
+    *   *Title:* Authentication Security Expansion: Password Reset & Account Lockout
+    *   *Content:* Detailed instructions on auditing existing code, implementing reset tokens (securely), and ensuring lockout logic is present/robust.
+
+10. **Final Check:** Does this meet the "General Rules"? Yes, Title + Code Block. Does it meet the "Role"? Yes, sounds like a lead dev specifying requirements.
+
+    *Let's write it.*`,reasoning_tokencount:1151,rendertime:{start:"2026-03-13T17:55:58.871Z",end:"2026-03-13T17:57:03.689Z",time:{full:"01m:04s:818ms",short:"01m:04s"}}}}}]},l=y;var d=[e,t,n,o,i,s,a,r,l];Object.freeze(d);var j=d;export{j as default};
